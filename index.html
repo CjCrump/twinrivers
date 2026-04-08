@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Twin Rivers Concrete | Custom Concrete & Outdoor Living | Brighton, IL</title>
 <meta name="description" content="Twin Rivers Concrete — custom stamped patios, hand-carved retaining walls, outdoor kitchens, fire pits, and water features in Brighton, IL and the Greater St. Louis area.">
+<link rel="icon" type="image/jpeg" href="images/logo.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 <style>
@@ -218,9 +219,9 @@ nav {
 /* ── ABOUT ── */
 #about { padding: 5rem 5%; background: var(--stone); }
 .about-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
-.about-img-wrap { position: relative; }
+.about-img-wrap { position: relative; isolation: isolate; }
 .about-img-wrap img { width: 100%; aspect-ratio: 4/5; object-fit: cover; display: block; }
-.about-accent { position: absolute; bottom: -10px; right: -10px; width: 55%; height: 38%; border: 2px solid var(--river); z-index: -1; }
+.about-accent { position: absolute; bottom: -10px; right: -10px; width: 55%; height: 38%; border: 2px solid var(--river); z-index: -1; pointer-events: none; }
 .about-stat-badge {
   position: absolute; bottom: 1.5rem; right: 1.5rem;
   background: var(--river); color: #fff; padding: 0.9rem 1.1rem;
@@ -784,8 +785,10 @@ const galleries = ['galleryPatios', 'galleryWalls', 'galleryFirepits', 'galleryW
 function showHome() {
   document.getElementById('homePage').style.display = 'block';
   galleries.forEach(id => document.getElementById(id).classList.remove('active'));
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-  setTimeout(initReveal, 80);
+  setTimeout(() => {
+    document.getElementById('services').scrollIntoView({ behavior: 'smooth' });
+    initReveal();
+  }, 80);
 }
 
 function showGallery(cat) {
