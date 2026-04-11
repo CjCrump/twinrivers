@@ -730,7 +730,7 @@ footer { background: #111009; padding: 3rem 5% 1.5rem; }
      TO ADD A PHOTO: drop the jpg in images/ then copy one gallery-thumb div and update src + alt -->
 <div class="gallery-page" id="galleryPatios">
   <div class="gallery-page-inner">
-    <button class="gallery-back" onclick="showHome()">Back to Services</button>
+    <button class="gallery-back" onclick="goBack()">Back to Services</button>
     <p class="section-label">Service Gallery</p>
     <h2 class="section-title">Patios &amp; Driveways</h2>
     <p class="section-body">Stamped, textured, and colored concrete for patios, driveways, walkways, and pool surrounds.</p>
@@ -756,7 +756,7 @@ footer { background: #111009; padding: 3rem 5% 1.5rem; }
      TO ADD A PHOTO: drop the jpg in images/ then copy one gallery-thumb div and update src + alt -->
 <div class="gallery-page" id="galleryWalls">
   <div class="gallery-page-inner">
-    <button class="gallery-back" onclick="showHome()">Back to Services</button>
+    <button class="gallery-back" onclick="goBack()">Back to Services</button>
     <p class="section-label">Service Gallery</p>
     <h2 class="section-title">Hand-Carved Retaining Walls</h2>
     <p class="section-body">Structural walls hand-formed and carved to look like natural stone — built to hold and crafted to impress.</p>
@@ -776,7 +776,7 @@ footer { background: #111009; padding: 3rem 5% 1.5rem; }
      TO ADD A PHOTO: drop the jpg in images/ then copy one gallery-thumb div and update src + alt -->
 <div class="gallery-page" id="galleryFirepits">
   <div class="gallery-page-inner">
-    <button class="gallery-back" onclick="showHome()">Back to Services</button>
+    <button class="gallery-back" onclick="goBack()">Back to Services</button>
     <p class="section-label">Service Gallery</p>
     <h2 class="section-title">Outdoor Kitchens &amp; Fire Pits</h2>
     <p class="section-body">Custom fire pits, seating walls, and outdoor kitchen features built for year-round enjoyment.</p>
@@ -793,7 +793,7 @@ footer { background: #111009; padding: 3rem 5% 1.5rem; }
      TO ADD A PHOTO: drop the jpg in images/ then copy one gallery-thumb div and update src + alt -->
 <div class="gallery-page" id="galleryWater">
   <div class="gallery-page-inner">
-    <button class="gallery-back" onclick="showHome()">Back to Services</button>
+    <button class="gallery-back" onclick="goBack()">Back to Services</button>
     <p class="section-label">Service Gallery</p>
     <h2 class="section-title">Water Features</h2>
     <p class="section-body">Custom ponds, waterfalls, and fountains hand-carved from concrete.</p>
@@ -866,8 +866,15 @@ function _renderGallery(cat) {
 
 // Public functions — called by clicks, push history entry then render
 function showHome() {
-  history.pushState({ gallery: null }, '', '#');
+  // Only used by nav/logo clicks — push a clean home state
+  history.pushState({ gallery: null }, '', location.pathname);
   _renderHome();
+}
+
+function goBack() {
+  // Used by "Back to Services" gallery buttons — just pop the history stack.
+  // The popstate handler below will call _renderHome() automatically.
+  history.back();
 }
 
 function showGallery(cat) {
@@ -887,7 +894,7 @@ window.addEventListener('popstate', e => {
 });
 
 // Seed initial history state so the very first back press is caught
-history.replaceState({ gallery: null }, '', window.location.href);
+history.replaceState({ gallery: null }, '', location.href);
 
 // ── LIGHTBOX ──
 function openLb(el) {
