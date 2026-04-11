@@ -5,7 +5,68 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Twin Rivers Concrete | Custom Concrete & Outdoor Living | Brighton, IL</title>
 <meta name="description" content="Twin Rivers Concrete — custom stamped patios, hand-carved retaining walls, outdoor kitchens, fire pits, and water features in Brighton, IL and the Greater St. Louis area.">
-<link rel="icon" type="image/jpeg" href="images/logo.jpg">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://twinriversconcrete.com/">
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="apple-touch-icon" href="images/favicon.png">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://twinriversconcrete.com/">
+<meta property="og:title" content="Twin Rivers Concrete | Custom Concrete & Outdoor Living | Brighton, IL">
+<meta property="og:description" content="Twin Rivers Concrete — custom stamped patios, hand-carved retaining walls, outdoor kitchens, fire pits, and water features in Brighton, IL and the Greater St. Louis area.">
+<meta property="og:image" content="https://twinriversconcrete.com/images/hero.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="Twin Rivers Concrete">
+<meta property="og:locale" content="en_US">
+
+<!-- Twitter / X Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Twin Rivers Concrete | Custom Concrete & Outdoor Living | Brighton, IL">
+<meta name="twitter:description" content="Custom stamped patios, hand-carved retaining walls, outdoor kitchens, fire pits, and water features in Brighton, IL and the Greater St. Louis area.">
+<meta name="twitter:image" content="https://twinriversconcrete.com/images/hero.jpg">
+
+<!-- JSON-LD LocalBusiness Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Twin Rivers Concrete",
+  "description": "Custom stamped patios, hand-carved retaining walls, outdoor kitchens, fire pits, and water features serving Brighton, IL and the Greater St. Louis area.",
+  "url": "https://twinriversconcrete.com",
+  "telephone": "+16189548268",
+  "email": "twinriversconcrete@outlook.com",
+  "image": "https://twinriversconcrete.com/images/hero.jpg",
+  "logo": "https://twinriversconcrete.com/images/logo.jpg",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Brighton",
+    "addressRegion": "IL",
+    "postalCode": "62012",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.9634,
+    "longitude": -90.1415
+  },
+  "areaServed": [
+    "Brighton, IL", "Alton, IL", "Godfrey, IL", "Edwardsville, IL",
+    "Saint Louis, MO", "Wood River, IL", "Bethalto, IL", "Roxana, IL",
+    "East Alton, IL", "Jerseyville, IL", "Collinsville, IL", "Granite City, IL"
+  ],
+  "priceRange": "$$",
+  "knowsAbout": [
+    "Stamped Concrete Patios", "Driveways", "Hand-Carved Retaining Walls",
+    "Outdoor Kitchens", "Fire Pits", "Water Features", "Bio Design Pools"
+  ],
+  "sameAs": []
+}
+</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 <style>
@@ -150,9 +211,9 @@ nav {
 }
 .service-card img {
   position: absolute; inset: 0; width: 100%; height: 100%;
-  object-fit: cover; transition: transform 0.6s ease, filter 0.4s ease; filter: brightness(0.48);
+  object-fit: cover; transition: transform 0.6s ease, filter 0.4s ease; filter: brightness(0.72);
 }
-.service-card:hover img { transform: scale(1.06); filter: brightness(0.38); }
+.service-card:hover img { transform: scale(1.06); filter: brightness(0.58); }
 .service-card-overlay {
   position: absolute; inset: 0;
   background: linear-gradient(to top, rgba(18,17,13,0.93) 0%, rgba(18,17,13,0.15) 65%, transparent 100%);
@@ -219,9 +280,9 @@ nav {
 /* ── ABOUT ── */
 #about { padding: 5rem 5%; background: var(--stone); }
 .about-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
-.about-img-wrap { position: relative; isolation: isolate; }
+.about-img-wrap { position: relative; }
 .about-img-wrap img { width: 100%; aspect-ratio: 4/5; object-fit: cover; display: block; }
-.about-accent { position: absolute; bottom: -10px; right: -10px; width: 55%; height: 38%; border: 2px solid var(--river); z-index: -1; pointer-events: none; }
+.about-accent { position: absolute; bottom: -10px; right: -10px; width: 55%; height: 38%; border: 2px solid var(--river); z-index: -1; }
 .about-stat-badge {
   position: absolute; bottom: 1.5rem; right: 1.5rem;
   background: var(--river); color: #fff; padding: 0.9rem 1.1rem;
@@ -431,7 +492,7 @@ footer { background: #111009; padding: 3rem 5% 1.5rem; }
         </a>
 
         <a class="service-card reveal" href="#" onclick="showGallery('water'); return false;">
-          <img src="images/water-waterfall2.jpg" alt="Custom water feature" loading="lazy">
+          <img src="images/water-waterfall.jpg" alt="Custom water feature" loading="lazy">
           <div class="service-card-overlay"></div>
           <div class="service-card-body">
             <h3 class="service-card-title">Water Features</h3>
@@ -483,9 +544,10 @@ footer { background: #111009; padding: 3rem 5% 1.5rem; }
 
   <!-- ABOUT -->
   <section id="about">
-    <div class="about-inner reveal">
-      <div class="about-img-wrap">
+    <div class="about-inner">
+      <div class="about-img-wrap reveal">
         <img src="images/wall-carved.jpg" alt="Twin Rivers Concrete — hand-carved work" loading="lazy">
+        <div class="about-accent"></div>
         <div class="about-stat-badge">
           <strong>100%</strong>
           Custom<br>Craftsmanship
@@ -655,7 +717,7 @@ footer { background: #111009; padding: 3rem 5% 1.5rem; }
     </div>
     <div class="footer-bottom">
       <p class="footer-copy">&copy; 2025 Twin Rivers Concrete &mdash; Brighton, IL. All rights reserved.</p>
-      <p class="footer-copy">Site by <a href="https://chanceitstudio.com" style="color:var(--river);text-decoration:none;">Chance IT Studio</a></p>
+      <p class="footer-copy">Site by <a href="https://chanceitstudio.com" style="color:var(--river);text-decoration:none;">ChanceIT Studio</a></p>
     </div>
   </footer>
 
@@ -674,7 +736,7 @@ footer { background: #111009; padding: 3rem 5% 1.5rem; }
     <p class="section-body">Stamped, textured, and colored concrete for patios, driveways, walkways, and pool surrounds.</p>
     <div class="gallery-grid" id="gridPatios">
       <div class="gallery-thumb" onclick="openLb(this)">
-        <img src="images/patio-driveway.jpg" alt="Driveway with fountain feature" loading="lazy">
+        <img src="images/patio-driveway-fountain.jpg" alt="Driveway with fountain feature" loading="lazy">
       </div>
       <div class="gallery-thumb" onclick="openLb(this)">
         <img src="images/patio-stamp.jpg" alt="Stamped concrete" loading="lazy">
@@ -723,18 +785,6 @@ footer { background: #111009; padding: 3rem 5% 1.5rem; }
         <img src="images/firepit.jpg" alt="Carved rock fire pit with seating" loading="lazy">
       </div>
       <!-- ADD NEW FIRE PIT / OUTDOOR KITCHEN PHOTOS HERE -->
-    <div class="gallery-thumb" onclick="openLb(this)">
-        <img src="images/firepit-log.jpg" alt="Carved rock fire pit with seating" loading="lazy">
-      </div>
-    <div class="gallery-thumb" onclick="openLb(this)">
-        <img src="images/firepit-log2.jpg" alt="Carved rock fire pit with seating" loading="lazy">
-      </div>
-    <div class="gallery-thumb" onclick="openLb(this)">
-        <img src="images/firepit-sm.jpg" alt="Carved rock fire pit with seating" loading="lazy">
-      </div>
-    <div class="gallery-thumb" onclick="openLb(this)">
-        <img src="images/firepit-sm1.jpg" alt="Carved rock fire pit with seating" loading="lazy">
-      </div>
     </div>
   </div>
 </div>
@@ -749,7 +799,7 @@ footer { background: #111009; padding: 3rem 5% 1.5rem; }
     <p class="section-body">Custom ponds, waterfalls, and fountains hand-carved from concrete.</p>
     <div class="gallery-grid" id="gridWater">
       <div class="gallery-thumb" onclick="openLb(this)">
-        <img src="images/water-waterfall2.jpg" alt="Waterfall closeup" loading="lazy">
+        <img src="images/water-closeup.jpg" alt="Waterfall closeup" loading="lazy">
       </div>
       <div class="gallery-thumb" onclick="openLb(this)">
         <img src="images/water-fountain.jpg" alt="Pond and water feature" loading="lazy">
@@ -792,29 +842,52 @@ window.addEventListener('scroll', () => {
 
 // ── PAGE SWITCHING ──
 const galleries = ['galleryPatios', 'galleryWalls', 'galleryFirepits', 'galleryWater'];
+const galleryMap = {
+  patios:   'galleryPatios',
+  walls:    'galleryWalls',
+  firepits: 'galleryFirepits',
+  water:    'galleryWater'
+};
 
-function showHome() {
+// _render* functions do the DOM work only — no history push
+function _renderHome() {
   document.getElementById('homePage').style.display = 'block';
   galleries.forEach(id => document.getElementById(id).classList.remove('active'));
-  setTimeout(() => {
-    document.getElementById('services').scrollIntoView({ behavior: 'smooth' });
-    initReveal();
-  }, 80);
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+  setTimeout(initReveal, 80);
+}
+
+function _renderGallery(cat) {
+  document.getElementById('homePage').style.display = 'none';
+  galleries.forEach(id => document.getElementById(id).classList.remove('active'));
+  if (galleryMap[cat]) document.getElementById(galleryMap[cat]).classList.add('active');
+  window.scrollTo({ top: 0, behavior: 'instant' });
+}
+
+// Public functions — called by clicks, push history entry then render
+function showHome() {
+  history.pushState({ gallery: null }, '', '#');
+  _renderHome();
 }
 
 function showGallery(cat) {
   closeMobile();
-  document.getElementById('homePage').style.display = 'none';
-  galleries.forEach(id => document.getElementById(id).classList.remove('active'));
-  const map = {
-    patios:   'galleryPatios',
-    walls:    'galleryWalls',
-    firepits: 'galleryFirepits',
-    water:    'galleryWater'
-  };
-  if (map[cat]) document.getElementById(map[cat]).classList.add('active');
-  window.scrollTo({ top: 0, behavior: 'instant' });
+  history.pushState({ gallery: cat }, '', '#gallery-' + cat);
+  _renderGallery(cat);
 }
+
+// Handle browser back / forward / phone swipe
+window.addEventListener('popstate', e => {
+  const cat = e.state && e.state.gallery;
+  if (cat) {
+    _renderGallery(cat);
+  } else {
+    _renderHome();
+  }
+});
+
+// Seed initial history state so the very first back press is caught
+history.replaceState({ gallery: null }, '', window.location.href);
 
 // ── LIGHTBOX ──
 function openLb(el) {
@@ -861,15 +934,9 @@ newCaptcha();
 let lastSubmit = 0;
 
 // ── FORM SUBMIT ──
-// TODO: When Caleb approves — add Formspree fetch here
-// Replace the success block with:
-//   await fetch('https://formspree.io/f/YOUR_ID', {
-//     method: 'POST',
-//     headers: { 'Content-Type': 'application/json' },
-//     body: JSON.stringify({ name: fname+' '+lname, phone, email, service, message })
-//   });
-function submitForm() {
+async function submitForm() {
   const msgEl = document.getElementById('formMsg');
+  const btn   = document.querySelector('.submit-btn');
   msgEl.className = 'form-msg';
 
   // Honeypot — silent reject if filled
@@ -919,13 +986,38 @@ function submitForm() {
     return;
   }
 
-  // All good
-  lastSubmit = Date.now();
-  newCaptcha();
-  msgEl.innerHTML = '&#10003;&nbsp; Message received! Caleb will be in touch soon. You can also call or text directly: <a href="tel:6189548268" style="color:var(--river)">(618) 954-8268</a>';
-  msgEl.className = 'form-msg success';
-  ['fname', 'lname', 'phone', 'email', 'message'].forEach(id => document.getElementById(id).value = '');
-  document.getElementById('service').selectedIndex = 0;
+  // All validation passed — send to Formspree
+  const service = document.getElementById('service').value;
+  const message = document.getElementById('message').value.trim();
+
+  btn.textContent = 'Sending…';
+  btn.disabled = true;
+
+  try {
+    const res = await fetch('https://formspree.io/f/mnjoeqkd', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify({ name: fname + ' ' + lname, phone, email, service, message })
+    });
+
+    if (res.ok) {
+      lastSubmit = Date.now();
+      newCaptcha();
+      msgEl.innerHTML = '&#10003;&nbsp; Message received! Caleb will be in touch soon. You can also call or text directly: <a href="tel:6189548268" style="color:var(--river)">(618) 954-8268</a>';
+      msgEl.className = 'form-msg success';
+      ['fname', 'lname', 'phone', 'email', 'message'].forEach(id => document.getElementById(id).value = '');
+      document.getElementById('service').selectedIndex = 0;
+    } else {
+      throw new Error('Server error');
+    }
+  } catch (err) {
+    msgEl.innerHTML = 'Something went wrong sending your message. Please call or text Caleb directly: <a href="tel:6189548268" style="color:var(--river)">(618) 954-8268</a>';
+    msgEl.className = 'form-msg error';
+    newCaptcha();
+  } finally {
+    btn.textContent = 'Send My Request \u2192';
+    btn.disabled = false;
+  }
 }
 </script>
 </body>
