@@ -7,12 +7,8 @@
 <meta name="description" content="Twin Rivers Concrete — custom stamped patios, hand-carved retaining walls, outdoor kitchens, fire pits, and water features in Brighton, IL and the Greater St. Louis area.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://twinriversconcrete.com/">
-
-<!-- Favicon -->
 <link rel="icon" type="image/png" href="images/favicon.png">
 <link rel="apple-touch-icon" href="images/favicon.png">
-
-<!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://twinriversconcrete.com/">
 <meta property="og:title" content="Twin Rivers Concrete | Custom Concrete & Outdoor Living | Brighton, IL">
@@ -22,14 +18,10 @@
 <meta property="og:image:height" content="630">
 <meta property="og:site_name" content="Twin Rivers Concrete">
 <meta property="og:locale" content="en_US">
-
-<!-- Twitter / X Card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Twin Rivers Concrete | Custom Concrete & Outdoor Living | Brighton, IL">
 <meta name="twitter:description" content="Custom stamped patios, hand-carved retaining walls, outdoor kitchens, fire pits, and water features in Brighton, IL and the Greater St. Louis area.">
 <meta name="twitter:image" content="https://twinriversconcrete.com/images/hero.jpg">
-
-<!-- JSON-LD LocalBusiness Structured Data -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -66,7 +58,6 @@
   "sameAs": []
 }
 </script>
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 <style>
@@ -84,8 +75,6 @@
 }
 html { scroll-behavior: smooth; }
 body { font-family: 'Lato', sans-serif; background: var(--stone); color: var(--text-light); overflow-x: hidden; }
-
-/* ── NAV ── */
 nav {
   position: fixed; top: 0; left: 0; right: 0; z-index: 200;
   display: flex; align-items: center; justify-content: space-between;
@@ -95,223 +84,93 @@ nav {
 }
 .nav-logo img { height: 52px; width: auto; }
 .nav-links { display: flex; gap: 2rem; list-style: none; }
-.nav-links a {
-  font-family: 'Oswald', sans-serif; font-size: 0.8rem;
-  letter-spacing: 0.14em; text-transform: uppercase;
-  color: var(--cream-dark); text-decoration: none; transition: color 0.2s;
-}
+.nav-links a { font-family: 'Oswald', sans-serif; font-size: 0.8rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--cream-dark); text-decoration: none; transition: color 0.2s; }
 .nav-links a:hover { color: var(--river); }
-.nav-cta {
-  font-family: 'Oswald', sans-serif; font-size: 0.8rem; letter-spacing: 0.1em;
-  text-transform: uppercase; padding: 0.5rem 1.3rem;
-  background: var(--river); color: #fff; text-decoration: none; transition: background 0.2s;
-}
+.nav-cta { font-family: 'Oswald', sans-serif; font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.5rem 1.3rem; background: var(--river); color: #fff; text-decoration: none; transition: background 0.2s; }
 .nav-cta:hover { background: var(--river-dark); }
-.hamburger {
-  display: none; flex-direction: column; gap: 5px;
-  cursor: pointer; background: none; border: none; padding: 4px;
-}
+.hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 4px; }
 .hamburger span { display: block; width: 25px; height: 2px; background: var(--cream); transition: all 0.3s; }
 .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
 .hamburger.open span:nth-child(2) { opacity: 0; }
 .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
-.mobile-menu {
-  display: none; position: fixed; top: 68px; left: 0; right: 0;
-  background: rgba(22,21,17,0.98); z-index: 199;
-  flex-direction: column; padding: 1rem 5% 1.5rem;
-  border-bottom: 1px solid rgba(61,184,212,0.13);
-}
+.mobile-menu { display: none; position: fixed; top: 68px; left: 0; right: 0; background: rgba(22,21,17,0.98); z-index: 199; flex-direction: column; padding: 1rem 5% 1.5rem; border-bottom: 1px solid rgba(61,184,212,0.13); }
 .mobile-menu.open { display: flex; }
-.mobile-menu a {
-  font-family: 'Oswald', sans-serif; font-size: 1rem; letter-spacing: 0.1em;
-  text-transform: uppercase; color: var(--cream-dark); text-decoration: none;
-  padding: 0.8rem 0; border-bottom: 1px solid rgba(255,255,255,0.06);
-}
+.mobile-menu a { font-family: 'Oswald', sans-serif; font-size: 1rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--cream-dark); text-decoration: none; padding: 0.8rem 0; border-bottom: 1px solid rgba(255,255,255,0.06); }
 .mobile-menu a:hover { color: var(--river); }
 .mobile-menu .m-cta { margin-top: 1rem; background: var(--river); color: #fff; text-align: center; padding: 0.85rem; border-bottom: none; }
-
-/* ── HERO ── */
 .hero { position: relative; min-height: 100svh; display: flex; align-items: flex-end; overflow: hidden; }
-.hero-bg {
-  position: absolute; inset: 0;
-  background-image: url('images/hero.jpg');
-  background-size: cover; background-position: center 40%;
-  filter: brightness(0.42);
-  animation: slowzoom 20s ease-in-out infinite alternate;
-}
+.hero-bg { position: absolute; inset: 0; background-image: url('images/hero.jpg'); background-size: cover; background-position: center 40%; filter: brightness(0.42); animation: slowzoom 20s ease-in-out infinite alternate; }
 @keyframes slowzoom { from { transform: scale(1.05); } to { transform: scale(1.0); } }
-.hero-overlay {
-  position: absolute; inset: 0;
-  background: linear-gradient(to top, rgba(18,17,13,0.95) 0%, rgba(18,17,13,0.3) 55%, transparent 100%);
-}
-.hero-content {
-  position: relative; z-index: 2;
-  width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 5% 7%;
-}
-.hero-eyebrow {
-  font-family: 'Oswald', sans-serif; font-size: 0.7rem; letter-spacing: 0.3em;
-  text-transform: uppercase; color: var(--river); margin-bottom: 0.8rem;
-}
-.hero h1 {
-  font-family: 'Oswald', sans-serif;
-  font-size: clamp(2.8rem, 7.5vw, 5.8rem);
-  font-weight: 700; line-height: 0.95; text-transform: uppercase;
-  letter-spacing: 0.03em; color: var(--text-light); margin-bottom: 1.3rem;
-}
+.hero-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(18,17,13,0.95) 0%, rgba(18,17,13,0.3) 55%, transparent 100%); }
+.hero-content { position: relative; z-index: 2; width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 5% 7%; }
+.hero-eyebrow { font-family: 'Oswald', sans-serif; font-size: 0.7rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--river); margin-bottom: 0.8rem; }
+.hero h1 { font-family: 'Oswald', sans-serif; font-size: clamp(2.8rem, 7.5vw, 5.8rem); font-weight: 700; line-height: 0.95; text-transform: uppercase; letter-spacing: 0.03em; color: var(--text-light); margin-bottom: 1.3rem; }
 .hero h1 em { color: var(--river); font-style: normal; }
-.hero-sub {
-  font-size: clamp(0.9rem, 1.8vw, 1.1rem); color: var(--cream-dark);
-  font-weight: 300; max-width: 520px; line-height: 1.7; margin-bottom: 2.2rem;
-}
+.hero-sub { font-size: clamp(0.9rem, 1.8vw, 1.1rem); color: var(--cream-dark); font-weight: 300; max-width: 520px; line-height: 1.7; margin-bottom: 2.2rem; }
 .hero-btns { display: flex; gap: 1rem; flex-wrap: wrap; }
-.btn-primary {
-  font-family: 'Oswald', sans-serif; font-size: 0.85rem; letter-spacing: 0.1em;
-  text-transform: uppercase; padding: 0.85rem 2rem;
-  background: var(--river); color: #fff; text-decoration: none;
-  transition: background 0.2s, transform 0.15s; display: inline-block;
-}
+.btn-primary { font-family: 'Oswald', sans-serif; font-size: 0.85rem; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.85rem 2rem; background: var(--river); color: #fff; text-decoration: none; transition: background 0.2s, transform 0.15s; display: inline-block; }
 .btn-primary:hover { background: var(--river-dark); transform: translateY(-2px); }
-.btn-ghost {
-  font-family: 'Oswald', sans-serif; font-size: 0.85rem; letter-spacing: 0.1em;
-  text-transform: uppercase; padding: 0.85rem 2rem;
-  border: 1.5px solid rgba(230,221,200,0.4); color: var(--cream); text-decoration: none;
-  transition: border-color 0.2s, color 0.2s; display: inline-block;
-}
+.btn-ghost { font-family: 'Oswald', sans-serif; font-size: 0.85rem; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.85rem 2rem; border: 1.5px solid rgba(230,221,200,0.4); color: var(--cream); text-decoration: none; transition: border-color 0.2s, color 0.2s; display: inline-block; }
 .btn-ghost:hover { border-color: var(--river); color: var(--river); }
-
-/* ── STATS ── */
-.stats-bar {
-  background: var(--river); padding: 1.1rem 5%;
-  display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap;
-}
+.stats-bar { background: var(--river); padding: 1.1rem 5%; display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap; }
 .stat { display: flex; align-items: center; gap: 0.65rem; }
 .stat-num { font-family: 'Oswald', sans-serif; font-size: 1.5rem; font-weight: 700; color: #fff; }
 .stat-label { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(255,255,255,0.82); line-height: 1.25; }
-
-/* ── SHARED ── */
-.section-label {
-  font-family: 'Oswald', sans-serif; font-size: 0.7rem; letter-spacing: 0.28em;
-  text-transform: uppercase; color: var(--river); margin-bottom: 0.5rem;
-}
-.section-title {
-  font-family: 'Oswald', sans-serif; font-size: clamp(1.8rem, 4vw, 2.9rem);
-  font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em;
-  color: var(--text-light); line-height: 1.05; margin-bottom: 1rem;
-}
+.section-label { font-family: 'Oswald', sans-serif; font-size: 0.7rem; letter-spacing: 0.28em; text-transform: uppercase; color: var(--river); margin-bottom: 0.5rem; }
+.section-title { font-family: 'Oswald', sans-serif; font-size: clamp(1.8rem, 4vw, 2.9rem); font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; color: var(--text-light); line-height: 1.05; margin-bottom: 1rem; }
 .section-body { font-size: 0.95rem; font-weight: 300; line-height: 1.8; color: var(--cream-dark); max-width: 560px; }
-
-/* ── SERVICES ── */
 #services { padding: 5rem 5%; background: var(--stone-mid); }
 .services-inner { max-width: 1200px; margin: 0 auto; }
 .services-header { margin-bottom: 2.5rem; }
 .services-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px; }
-.service-card {
-  position: relative; overflow: hidden; aspect-ratio: 16/10;
-  cursor: pointer; display: block; text-decoration: none;
-}
-.service-card img {
-  position: absolute; inset: 0; width: 100%; height: 100%;
-  object-fit: cover; transition: transform 0.6s ease, filter 0.4s ease; filter: brightness(0.48);
-}
+.service-card { position: relative; overflow: hidden; aspect-ratio: 16/10; cursor: pointer; display: block; text-decoration: none; }
+.service-card img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease, filter 0.4s ease; filter: brightness(0.48); }
 .service-card:hover img { transform: scale(1.06); filter: brightness(0.38); }
-.service-card-overlay {
-  position: absolute; inset: 0;
-  background: linear-gradient(to top, rgba(18,17,13,0.93) 0%, rgba(18,17,13,0.15) 65%, transparent 100%);
-}
+.service-card-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(18,17,13,0.93) 0%, rgba(18,17,13,0.15) 65%, transparent 100%); }
 .service-card-body { position: absolute; bottom: 0; left: 0; right: 0; padding: 1.75rem 1.75rem 1.5rem; z-index: 2; }
-.service-card-title {
-  font-family: 'Oswald', sans-serif; font-size: clamp(1.1rem, 2vw, 1.4rem);
-  font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em;
-  color: #fff; margin-bottom: 0.5rem; line-height: 1.1;
-}
+.service-card-title { font-family: 'Oswald', sans-serif; font-size: clamp(1.1rem, 2vw, 1.4rem); font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: #fff; margin-bottom: 0.5rem; line-height: 1.1; }
 .service-card-desc { font-size: 0.82rem; font-weight: 300; line-height: 1.6; color: var(--cream-dark); max-width: 380px; margin-bottom: 1rem; }
-.service-card-link {
-  font-family: 'Oswald', sans-serif; font-size: 0.72rem; letter-spacing: 0.15em;
-  text-transform: uppercase; color: var(--river);
-  display: flex; align-items: center; gap: 0.4rem;
-  transform: translateY(6px); opacity: 0; transition: opacity 0.3s, transform 0.3s;
-}
+.service-card-link { font-family: 'Oswald', sans-serif; font-size: 0.72rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--river); display: flex; align-items: center; gap: 0.4rem; transform: translateY(6px); opacity: 0; transition: opacity 0.3s, transform 0.3s; }
 .service-card:hover .service-card-link { opacity: 1; transform: translateY(0); }
 .service-card-link::after { content: '→'; }
-
-/* ── GALLERY PAGES ── */
 .gallery-page { display: none; padding: 5.5rem 5% 4rem; background: var(--stone); min-height: 100vh; }
 .gallery-page.active { display: block; }
 .gallery-page-inner { max-width: 1200px; margin: 0 auto; }
-.gallery-back {
-  font-family: 'Oswald', sans-serif; font-size: 0.75rem; letter-spacing: 0.15em;
-  text-transform: uppercase; color: var(--river); background: none; border: none;
-  cursor: pointer; display: flex; align-items: center; gap: 0.5rem; margin-bottom: 2rem; padding: 0;
-}
+.gallery-back { font-family: 'Oswald', sans-serif; font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--river); background: none; border: none; cursor: pointer; display: flex; align-items: center; gap: 0.5rem; margin-bottom: 2rem; padding: 0; }
 .gallery-back::before { content: '←'; }
 .gallery-back:hover { color: var(--cream); }
-.gallery-grid {
-  display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 6px; margin-top: 1.5rem;
-}
+.gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 6px; margin-top: 1.5rem; }
 .gallery-thumb { overflow: hidden; aspect-ratio: 4/3; cursor: pointer; position: relative; }
 .gallery-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.4s ease; }
 .gallery-thumb:hover img { transform: scale(1.05); }
-
-/* ── BIO DESIGN ── */
 #biodesign { padding: 5rem 5%; background: var(--stone-mid); }
 .biodesign-inner { max-width: 1200px; margin: 0 auto; }
 .biodesign-header { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 2.5rem; flex-wrap: wrap; gap: 1.5rem; }
-.biodesign-badge {
-  font-family: 'Oswald', sans-serif; font-size: 0.7rem; letter-spacing: 0.18em;
-  text-transform: uppercase; padding: 0.4rem 1rem; flex-shrink: 0; align-self: flex-start;
-  background: rgba(61,184,212,0.1); border: 1px solid rgba(61,184,212,0.35); color: var(--river);
-}
+.biodesign-badge { font-family: 'Oswald', sans-serif; font-size: 0.7rem; letter-spacing: 0.18em; text-transform: uppercase; padding: 0.4rem 1rem; flex-shrink: 0; align-self: flex-start; background: rgba(61,184,212,0.1); border: 1px solid rgba(61,184,212,0.35); color: var(--river); }
 .biodesign-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; }
 .bio-card { position: relative; overflow: hidden; aspect-ratio: 3/4; }
 .bio-card img { width: 100%; height: 100%; object-fit: cover; display: block; filter: brightness(0.32) saturate(0.5); }
-.bio-card-overlay {
-  position: absolute; inset: 0;
-  display: flex; flex-direction: column; align-items: center; justify-content: center;
-  gap: 0.75rem; text-align: center; padding: 1.5rem;
-}
+.bio-card-overlay { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.75rem; text-align: center; padding: 1.5rem; }
 .bio-card-label { font-family: 'Oswald', sans-serif; font-size: 0.85rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); }
-.bio-inner-badge {
-  font-family: 'Oswald', sans-serif; font-size: 0.65rem; letter-spacing: 0.2em;
-  text-transform: uppercase; padding: 0.3rem 0.9rem;
-  border: 1px solid rgba(61,184,212,0.4); color: var(--river); background: rgba(0,0,0,0.4);
-}
-
-/* ── ABOUT ── */
+.bio-inner-badge { font-family: 'Oswald', sans-serif; font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase; padding: 0.3rem 0.9rem; border: 1px solid rgba(61,184,212,0.4); color: var(--river); background: rgba(0,0,0,0.4); }
 #about { padding: 5rem 5%; background: var(--stone); }
 .about-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
 .about-img-wrap { position: relative; }
 .about-img-wrap img { width: 100%; aspect-ratio: 4/5; object-fit: cover; display: block; }
 .about-accent { position: absolute; bottom: -10px; right: -10px; width: 55%; height: 38%; z-index: -1; }
-.about-stat-badge {
-  position: absolute; bottom: 1.5rem; right: 1.5rem;
-  background: var(--river); color: #fff; padding: 0.9rem 1.1rem;
-  font-family: 'Oswald', sans-serif; text-transform: uppercase; text-align: center;
-  font-size: 0.72rem; letter-spacing: 0.1em; line-height: 1.4;
-}
+.about-stat-badge { position: absolute; bottom: 1.5rem; right: 1.5rem; background: var(--river); color: #fff; padding: 0.9rem 1.1rem; font-family: 'Oswald', sans-serif; text-transform: uppercase; text-align: center; font-size: 0.72rem; letter-spacing: 0.1em; line-height: 1.4; }
 .about-stat-badge strong { display: block; font-size: 1.9rem; line-height: 1; }
 .pillars { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 2rem; }
 .pillar { padding: 1.1rem 1.1rem 1.1rem 1rem; border-left: 2px solid var(--river); }
 .pillar-title { font-family: 'Oswald', sans-serif; font-size: 0.75rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--river); margin-bottom: 0.3rem; }
 .pillar-text { font-size: 0.82rem; font-weight: 300; line-height: 1.55; color: var(--cream-dark); }
-
-/* ── SERVICE AREA ── */
 #service-area { padding: 5rem 5%; background: var(--stone-mid); }
 .area-inner { max-width: 1200px; margin: 0 auto; }
 .area-layout { display: grid; grid-template-columns: 1fr 1.6fr; gap: 4rem; align-items: start; margin-top: 2rem; }
 .area-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1.5rem; }
-.area-tag {
-  font-size: 0.75rem; font-family: 'Oswald', sans-serif; letter-spacing: 0.08em;
-  text-transform: uppercase; padding: 0.35rem 0.8rem;
-  border: 1px solid rgba(61,184,212,0.28); color: var(--cream-dark);
-}
+.area-tag { font-size: 0.75rem; font-family: 'Oswald', sans-serif; letter-spacing: 0.08em; text-transform: uppercase; padding: 0.35rem 0.8rem; border: 1px solid rgba(61,184,212,0.28); color: var(--cream-dark); }
 .map-wrap { border: 1.5px solid rgba(61,184,212,0.18); overflow: hidden; background: var(--stone); }
-.map-wrap iframe {
-  width: 100%; height: 420px; border: 0; display: block;
-  filter: invert(90%) hue-rotate(185deg) saturate(0.75) brightness(0.72);
-}
-
-/* ── CONTACT ── */
+.map-wrap iframe { width: 100%; height: 420px; border: 0; display: block; filter: invert(90%) hue-rotate(185deg) saturate(0.75) brightness(0.72); }
 #contact { padding: 5rem 5%; background: var(--stone); }
 .contact-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start; }
 .contact-detail { display: flex; align-items: flex-start; gap: 1rem; margin-top: 1.75rem; padding-top: 1.75rem; border-top: 1px solid rgba(255,255,255,0.07); }
@@ -326,30 +185,19 @@ nav {
 .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
 .form-group { display: flex; flex-direction: column; margin-bottom: 0.85rem; }
 .form-group label { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 0.4rem; }
-.form-group input, .form-group select, .form-group textarea {
-  background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1);
-  color: var(--text-light); padding: 0.7rem 0.9rem; font-family: 'Lato', sans-serif;
-  font-size: 0.88rem; outline: none; transition: border-color 0.2s; width: 100%;
-}
+.form-group input, .form-group select, .form-group textarea { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); color: var(--text-light); padding: 0.7rem 0.9rem; font-family: 'Lato', sans-serif; font-size: 0.88rem; outline: none; transition: border-color 0.2s; width: 100%; }
 .form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--river); }
 .form-group select option { background: var(--stone-mid); }
 .form-group textarea { resize: vertical; min-height: 100px; }
 .captcha-row { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.85rem; flex-wrap: wrap; }
 .captcha-q { font-size: 0.88rem; color: var(--cream-dark); font-weight: 400; white-space: nowrap; }
 .captcha-q strong { color: var(--river); }
-.submit-btn {
-  font-family: 'Oswald', sans-serif; font-size: 0.85rem; letter-spacing: 0.1em;
-  text-transform: uppercase; padding: 0.95rem 2rem;
-  background: var(--river); color: #fff; border: none; cursor: pointer;
-  width: 100%; transition: background 0.2s; margin-top: 0.25rem;
-}
+.submit-btn { font-family: 'Oswald', sans-serif; font-size: 0.85rem; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.95rem 2rem; background: var(--river); color: #fff; border: none; cursor: pointer; width: 100%; transition: background 0.2s; margin-top: 0.25rem; }
 .submit-btn:hover { background: var(--river-dark); }
 .form-msg { font-size: 0.82rem; margin-top: 0.75rem; padding: 0.7rem 0.9rem; display: none; }
 .form-msg.success { background: rgba(61,184,212,0.12); border: 1px solid rgba(61,184,212,0.3); color: var(--river); display: block; }
 .form-msg.error { background: rgba(184,61,40,0.1); border: 1px solid rgba(184,61,40,0.3); color: #e07060; display: block; }
 .rate-note { font-size: 0.7rem; color: var(--text-muted); margin-top: 0.4rem; text-align: center; }
-
-/* ── FOOTER ── */
 footer { background: #111009; padding: 3rem 5% 1.5rem; }
 .footer-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding-bottom: 2rem; border-bottom: 1px solid rgba(255,255,255,0.07); flex-wrap: wrap; gap: 2rem; }
 .footer-logo img { height: 60px; }
@@ -358,18 +206,12 @@ footer { background: #111009; padding: 3rem 5% 1.5rem; }
 .footer-links a:hover { color: var(--river); }
 .footer-bottom { max-width: 1200px; margin: 1.25rem auto 0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
 .footer-copy { font-size: 0.72rem; color: var(--text-muted); }
-
-/* ── LIGHTBOX ── */
 .lightbox { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.93); z-index: 999; align-items: center; justify-content: center; padding: 2rem; }
 .lightbox.open { display: flex; }
 .lightbox img { max-width: 100%; max-height: 88vh; object-fit: contain; }
 .lb-close { position: absolute; top: 1.25rem; right: 1.5rem; background: none; border: none; color: #fff; font-size: 1.8rem; cursor: pointer; line-height: 1; }
-
-/* ── REVEAL ── */
 .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
 .reveal.visible { opacity: 1; transform: translateY(0); }
-
-/* ── RESPONSIVE ── */
 @media (max-width: 940px) {
   .nav-links, .nav-cta { display: none; }
   .hamburger { display: flex; }
@@ -398,7 +240,6 @@ footer { background: #111009; padding: 3rem 5% 1.5rem; }
 </head>
 <body>
 
-<!-- NAV -->
 <nav id="mainNav">
   <a class="nav-logo" href="#" onclick="showHome(); return false;">
     <img src="images/logo.jpg" alt="Twin Rivers Concrete">
@@ -425,10 +266,8 @@ footer { background: #111009; padding: 3rem 5% 1.5rem; }
   <a class="m-cta" href="#contact" onclick="closeMobile()">Get a Free Quote</a>
 </div>
 
-<!-- ═══════════ HOME PAGE ═══════════ -->
 <div id="homePage">
 
-  <!-- HERO -->
   <section class="hero" id="top">
     <div class="hero-bg"></div>
     <div class="hero-overlay"></div>
@@ -443,7 +282,6 @@ footer { background: #111009; padding: 3rem 5% 1.5rem; }
     </div>
   </section>
 
-  <!-- STATS -->
   <div class="stats-bar">
     <div class="stat"><span class="stat-num">15+</span><span class="stat-label">Years<br>Experience</span></div>
     <div class="stat"><span class="stat-num">500+</span><span class="stat-label">Projects<br>Completed</span></div>
@@ -451,7 +289,6 @@ footer { background: #111009; padding: 3rem 5% 1.5rem; }
     <div class="stat"><span class="stat-num">Locally</span><span class="stat-label">Owned &amp;<br>Operated</span></div>
   </div>
 
-  <!-- SERVICES -->
   <section id="services">
     <div class="services-inner">
       <div class="services-header reveal">
@@ -460,7 +297,6 @@ footer { background: #111009; padding: 3rem 5% 1.5rem; }
         <p class="section-body">Every project is custom — no cookie-cutter work. Click any service to see real examples from completed jobs.</p>
       </div>
       <div class="services-grid">
-
         <a class="service-card reveal" href="#" onclick="showGallery('patios'); return false;">
           <img src="images/retaining-driveway.jpg" alt="Stamped concrete patio" loading="lazy">
           <div class="service-card-overlay"></div>
@@ -470,7 +306,6 @@ footer { background: #111009; padding: 3rem 5% 1.5rem; }
             <span class="service-card-link">View Examples</span>
           </div>
         </a>
-
         <a class="service-card reveal" href="#" onclick="showGallery('walls'); return false;">
           <img src="images/patio-retaining.jpg" alt="Hand-carved retaining wall" loading="lazy">
           <div class="service-card-overlay"></div>
@@ -480,7 +315,6 @@ footer { background: #111009; padding: 3rem 5% 1.5rem; }
             <span class="service-card-link">View Examples</span>
           </div>
         </a>
-
         <a class="service-card reveal" href="#" onclick="showGallery('firepits'); return false;">
           <img src="images/kitchen-8.png" alt="Custom fire pit and outdoor kitchen" loading="lazy">
           <div class="service-card-overlay"></div>
@@ -490,7 +324,6 @@ footer { background: #111009; padding: 3rem 5% 1.5rem; }
             <span class="service-card-link">View Examples</span>
           </div>
         </a>
-
         <a class="service-card reveal" href="#" onclick="showGallery('water'); return false;">
           <img src="images/water.jpg" alt="Custom water feature" loading="lazy">
           <div class="service-card-overlay"></div>
@@ -500,12 +333,10 @@ footer { background: #111009; padding: 3rem 5% 1.5rem; }
             <span class="service-card-link">View Examples</span>
           </div>
         </a>
-
       </div>
     </div>
   </section>
 
-  <!-- BIO DESIGN — COMING SOON -->
   <section id="biodesign">
     <div class="biodesign-inner">
       <div class="biodesign-header reveal">
@@ -519,67 +350,41 @@ footer { background: #111009; padding: 3rem 5% 1.5rem; }
       <div class="biodesign-grid">
         <div class="bio-card reveal">
           <img src="images/bio-1.jpg" alt="Bio Design natural pool" loading="lazy">
-          <div class="bio-card-overlay">
-            <span class="bio-inner-badge">Coming Soon</span>
-            <p class="bio-card-label">Natural Pool Systems</p>
-          </div>
+          <div class="bio-card-overlay"><span class="bio-inner-badge">Coming Soon</span><p class="bio-card-label">Natural Pool Systems</p></div>
         </div>
         <div class="bio-card reveal">
           <img src="images/bio-2.jpg" alt="Bio Design beach entry pool" loading="lazy">
-          <div class="bio-card-overlay">
-            <span class="bio-inner-badge">Coming Soon</span>
-            <p class="bio-card-label">Beach Entry Designs</p>
-          </div>
+          <div class="bio-card-overlay"><span class="bio-inner-badge">Coming Soon</span><p class="bio-card-label">Beach Entry Designs</p></div>
         </div>
         <div class="bio-card reveal">
           <img src="images/bio-3.jpg" alt="Bio Design organic surround" loading="lazy">
-          <div class="bio-card-overlay">
-            <span class="bio-inner-badge">Coming Soon</span>
-            <p class="bio-card-label">Organic Surrounds</p>
-          </div>
+          <div class="bio-card-overlay"><span class="bio-inner-badge">Coming Soon</span><p class="bio-card-label">Organic Surrounds</p></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ABOUT -->
   <section id="about">
     <div class="about-inner">
       <div class="about-img-wrap reveal">
         <img src="images/about.jpg" alt="Twin Rivers Concrete — hand-carved work" loading="lazy">
         <div class="about-accent"></div>
-        <div class="about-stat-badge">
-          <strong>100%</strong>
-          Custom<br>Craftsmanship
-        </div>
+        <div class="about-stat-badge"><strong>100%</strong>Custom<br>Craftsmanship</div>
       </div>
       <div>
         <p class="section-label reveal">Our Story</p>
         <h2 class="section-title reveal">Built with<br>Craftmanship<br>&amp; Pride.</h2>
         <p class="section-body reveal">Twin Rivers Concrete is a locally owned company based in Brighton, Illinois, specializing in custom concrete work and outdoor living features. We focus on craftmanship, durability, and clean execution from start to finish.<br><br>Owner Caleb Milford is hands-on at every project — when you hire Twin Rivers, you get Caleb's personal attention, not a crew you've never met.</p>
         <div class="pillars reveal">
-          <div class="pillar">
-            <p class="pillar-title">Locally Owned</p>
-            <p class="pillar-text">Brighton-based, community-rooted, proud of every pour.</p>
-          </div>
-          <div class="pillar">
-            <p class="pillar-title">Non Cookie Cutter</p>
-            <p class="pillar-text">No templates. Every job is designed from scratch.</p>
-          </div>
-          <div class="pillar">
-            <p class="pillar-title">Built to Last</p>
-            <p class="pillar-text">We don't cut corners. Engineered for the long haul.</p>
-          </div>
-          <div class="pillar">
-            <p class="pillar-title">Owner on Site</p>
-            <p class="pillar-text">Caleb is hands-on at every project — his name is on it.</p>
-          </div>
+          <div class="pillar"><p class="pillar-title">Locally Owned</p><p class="pillar-text">Brighton-based, community-rooted, proud of every pour.</p></div>
+          <div class="pillar"><p class="pillar-title">Non Cookie Cutter</p><p class="pillar-text">No templates. Every job is designed from scratch.</p></div>
+          <div class="pillar"><p class="pillar-title">Built to Last</p><p class="pillar-text">We don't cut corners. Engineered for the long haul.</p></div>
+          <div class="pillar"><p class="pillar-title">Owner on Site</p><p class="pillar-text">Caleb is hands-on at every project — his name is on it.</p></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SERVICE AREA -->
   <section id="service-area">
     <div class="area-inner">
       <div class="reveal">
@@ -591,33 +396,22 @@ footer { background: #111009; padding: 3rem 5% 1.5rem; }
         <div>
           <p style="font-family:'Oswald',sans-serif;font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--river);margin-bottom:0.75rem;">Communities We Serve</p>
           <div class="area-tags">
-            <span class="area-tag">Brighton</span>
-            <span class="area-tag">Alton</span>
-            <span class="area-tag">Godfrey</span>
-            <span class="area-tag">Edwardsville</span>
-            <span class="area-tag">Saint Louis</span>
-            <span class="area-tag">Wood River</span>
-            <span class="area-tag">Bethalto</span>
-            <span class="area-tag">Roxana</span>
-            <span class="area-tag">East Alton</span>
-            <span class="area-tag">Jerseyville</span>
-            <span class="area-tag">Collinsville</span>
-            <span class="area-tag">Granite City</span>
+            <span class="area-tag">Brighton</span><span class="area-tag">Alton</span><span class="area-tag">Godfrey</span>
+            <span class="area-tag">Edwardsville</span><span class="area-tag">Saint Louis</span><span class="area-tag">Wood River</span>
+            <span class="area-tag">Bethalto</span><span class="area-tag">Roxana</span><span class="area-tag">East Alton</span>
+            <span class="area-tag">Jerseyville</span><span class="area-tag">Collinsville</span><span class="area-tag">Granite City</span>
           </div>
           <p style="font-size:0.78rem;color:var(--text-muted);margin-top:1.25rem;font-style:italic;">Plus surrounding communities — not sure if we cover your area? Just call.</p>
         </div>
         <div class="map-wrap">
-          <iframe
-            title="Twin Rivers Concrete Service Area — Brighton IL and Greater St. Louis"
+          <iframe title="Twin Rivers Concrete Service Area — Brighton IL and Greater St. Louis"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d196000!2d-90.15!3d38.92!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87d8b5f5fd69c3db%3A0x19921c21a0a88a8!2sBrighton%2C%20IL%2062012!5e0!3m2!1sen!2sus!4v1700000000000"
-            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CONTACT -->
   <section id="contact">
     <div class="contact-inner">
       <div>
@@ -626,52 +420,29 @@ footer { background: #111009; padding: 3rem 5% 1.5rem; }
         <p class="section-body reveal">Reach out for a free quote. We'll come take a look, talk through your vision, and give you a straight answer on what it takes to build it right.</p>
         <div class="contact-detail reveal">
           <div class="c-icon">&#9742;</div>
-          <div>
-            <p class="c-key">Phone / Text</p>
-            <p class="c-val"><a href="tel:6189548268">(618) 954-8268</a></p>
-          </div>
+          <div><p class="c-key">Phone / Text</p><p class="c-val"><a href="tel:6189548268">(618) 954-8268</a></p></div>
         </div>
         <div class="contact-detail reveal">
           <div class="c-icon">&#9993;</div>
-          <div>
-            <p class="c-key">Email</p>
-            <p class="c-val"><a href="mailto:twinriversconcrete@outlook.com">twinriversconcrete@outlook.com</a></p>
-          </div>
+          <div><p class="c-key">Email</p><p class="c-val"><a href="/cdn-cgi/l/email-protection#483c3f21263a213e2d3a3b2b27262b3a2d3c2d08273d3c24272723662b2725"><span class="__cf_email__" data-cfemail="fe8a8997908c97889b8c8d9d91909d8c9b8a9bbe918b8a92919195d09d9193">[email&#160;protected]</span></a></p></div>
         </div>
         <div class="contact-detail reveal">
           <div class="c-icon">&#9679;</div>
-          <div>
-            <p class="c-key">Location</p>
-            <p class="c-val">Brighton, IL 62012<br>Greater St. Louis Area</p>
-          </div>
+          <div><p class="c-key">Location</p><p class="c-val">Brighton, IL 62012<br>Greater St. Louis Area</p></div>
         </div>
       </div>
-
       <div class="contact-form reveal">
         <p class="form-title">Request a Free Quote</p>
-        <!-- Honeypot — invisible to humans, bots fill it and get silently rejected -->
         <div style="position:absolute;left:-9999px;opacity:0;pointer-events:none;height:0;overflow:hidden;" aria-hidden="true">
           <input type="text" id="hp_website" name="website" tabindex="-1" autocomplete="off">
         </div>
         <div class="form-row" style="margin-bottom:0">
-          <div class="form-group">
-            <label for="fname">First Name *</label>
-            <input type="text" id="fname" placeholder="John" autocomplete="given-name">
-          </div>
-          <div class="form-group">
-            <label for="lname">Last Name *</label>
-            <input type="text" id="lname" placeholder="Smith" autocomplete="family-name">
-          </div>
+          <div class="form-group"><label for="fname">First Name *</label><input type="text" id="fname" placeholder="John" autocomplete="given-name"></div>
+          <div class="form-group"><label for="lname">Last Name *</label><input type="text" id="lname" placeholder="Smith" autocomplete="family-name"></div>
         </div>
         <div class="form-row" style="margin-bottom:0">
-          <div class="form-group">
-            <label for="phone">Phone *</label>
-            <input type="tel" id="phone" placeholder="(618) 555-0100" autocomplete="tel">
-          </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" placeholder="you@email.com" autocomplete="email">
-          </div>
+          <div class="form-group"><label for="phone">Phone *</label><input type="tel" id="phone" placeholder="(618) 555-0100" autocomplete="tel"></div>
+          <div class="form-group"><label for="email">Email</label><input type="email" id="email" placeholder="you@email.com" autocomplete="email"></div>
         </div>
         <div class="form-group">
           <label for="service">Service Interested In</label>
@@ -685,16 +456,10 @@ footer { background: #111009; padding: 3rem 5% 1.5rem; }
             <option>Other / Not Sure Yet</option>
           </select>
         </div>
-        <div class="form-group">
-          <label for="message">Tell us about your project</label>
-          <textarea id="message" placeholder="Describe your project, approximate size, timeline, or any questions..."></textarea>
-        </div>
-        <!-- Math captcha — regenerates on every load and after each submission -->
+        <div class="form-group"><label for="message">Tell us about your project</label><textarea id="message" placeholder="Describe your project, approximate size, timeline, or any questions..."></textarea></div>
         <div class="captcha-row">
           <span class="captcha-q">Quick check &mdash; what is <strong id="cA">?</strong> + <strong id="cB">?</strong>?</span>
-          <div class="form-group" style="margin-bottom:0;">
-            <input type="number" id="captchaAns" style="width:80px;" placeholder="?" min="0" max="20">
-          </div>
+          <div class="form-group" style="margin-bottom:0;"><input type="number" id="captchaAns" style="width:80px;" placeholder="?" min="0" max="20"></div>
         </div>
         <button class="submit-btn" onclick="submitForm()">Send My Request &#8594;</button>
         <p class="rate-note">We typically respond within one business day.</p>
@@ -703,7 +468,6 @@ footer { background: #111009; padding: 3rem 5% 1.5rem; }
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer>
     <div class="footer-inner">
       <div class="footer-logo"><img src="images/logo.jpg" alt="Twin Rivers Concrete"></div>
@@ -736,52 +500,52 @@ footer { background: #111009; padding: 3rem 5% 1.5rem; }
     <p class="section-body">Stamped, textured, and colored concrete for patios, driveways, walkways, and pool surrounds.</p>
     <div class="gallery-grid" id="gridPatios">
       <div class="gallery-thumb" onclick="openLb(this)"><img src="images/patio.jpg" alt="Custom stamped concrete patio" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/patio1.jpg" alt="Stamped concrete patio" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/patio2.jpg" alt="Custom patio design" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/patio3.jpg" alt="Stamped patio detail" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/patio4.jpg" alt="Concrete patio with texture" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/patio5.jpg" alt="Outdoor patio space" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/patio6.jpg" alt="Custom concrete patio" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/patio7.jpg" alt="Stamped concrete patio" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/patio8.jpg" alt="Patio with decorative concrete" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/patio9.jpg" alt="Custom outdoor patio" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/patio10.jpg" alt="Stamped concrete patio design" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/patio11.jpg" alt="Concrete patio project" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/patio12.jpg" alt="Custom stamped patio" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/patio13.jpg" alt="Outdoor concrete patio" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/patio14.jpg" alt="Stamped concrete patio" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/patio15.jpg" alt="Custom patio design" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/patio16.jpg" alt="Decorative concrete patio" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/patio17.jpg" alt="Outdoor patio area" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/patio18.jpg" alt="Stamped concrete patio" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/patio19.jpg" alt="Custom concrete patio" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/driveway1.jpg" alt="Custom concrete driveway" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/driveway2.jpg" alt="Stamped concrete driveway" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/driveway3.jpg" alt="Decorative driveway" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/driveway4.jpg" alt="Concrete driveway design" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/driveway5.jpg" alt="Custom driveway concrete" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/driveway6.jpg" alt="Stamped driveway" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/driveway7.jpg" alt="Concrete driveway" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/driveway8.jpg" alt="Custom concrete driveway" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/driveway9.jpg" alt="Driveway concrete work" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/driveway10.jpg" alt="Decorative concrete driveway" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/driveway11.jpg" alt="Custom driveway design" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/driveway12.jpg" alt="Stamped concrete driveway" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/patiofirepit.jpg" alt="Patio with fire pit" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/firepitpatio1.jpg" alt="Fire pit and patio area" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retainingpatio.jpg" alt="Retaining wall with patio" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retainingpatio1.jpg" alt="Retaining wall and patio design" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retainingpatio2.jpg" alt="Retaining wall patio project" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retainingpatio3.jpg" alt="Custom retaining wall and patio" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retainingpatiofirepit.jpg" alt="Retaining wall, patio, and fire pit" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retainingdriveway.jpg" alt="Retaining wall with driveway" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retainingdrivewaywater.jpg" alt="Retaining wall, driveway, and water feature" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retainingdrivewaywater1.jpg" alt="Retaining wall, driveway, and water feature" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/waterfirepitpatio.jpg" alt="Water feature, fire pit, and patio" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/waterfirepitpatio1.jpg" alt="Water feature, fire pit, and patio" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/waterfirepitpatio2.jpg" alt="Water feature, fire pit, and patio" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/waterfirepitpatio3.jpg" alt="Water feature, fire pit, and patio" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/waterfirepitpatio4.jpg" alt="Water feature, fire pit, and patio" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/patio-1.jpg" alt="Stamped concrete patio" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/patio-2.jpg" alt="Custom patio design" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/patio-3.jpg" alt="Stamped patio detail" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/patio-4.jpg" alt="Concrete patio with texture" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/patio-5.jpg" alt="Outdoor patio space" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/patio-6.jpg" alt="Custom concrete patio" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/patio-7.jpg" alt="Stamped concrete patio" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/patio-8.jpg" alt="Patio with decorative concrete" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/patio-9.jpg" alt="Custom outdoor patio" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/patio-10.jpg" alt="Stamped concrete patio design" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/patio-11.jpg" alt="Concrete patio project" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/patio-12.jpg" alt="Custom stamped patio" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/patio-13.jpg" alt="Outdoor concrete patio" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/patio-14.jpg" alt="Stamped concrete patio" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/patio-15.jpg" alt="Custom patio design" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/patio-16.jpg" alt="Decorative concrete patio" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/patio-17.jpg" alt="Outdoor patio area" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/patio-18.jpg" alt="Stamped concrete patio" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/patio-19.jpg" alt="Custom concrete patio" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/driveway-1.jpg" alt="Custom concrete driveway" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/driveway-2.jpg" alt="Stamped concrete driveway" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/driveway-3.jpg" alt="Decorative driveway" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/driveway-4.jpg" alt="Concrete driveway design" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/driveway-5.jpg" alt="Custom driveway concrete" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/driveway-6.jpg" alt="Stamped driveway" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/driveway-7.jpg" alt="Concrete driveway" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/driveway-8.jpg" alt="Custom concrete driveway" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/driveway-9.jpg" alt="Driveway concrete work" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/driveway-10.jpg" alt="Decorative concrete driveway" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/driveway-11.jpg" alt="Custom driveway design" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/driveway-12.jpg" alt="Stamped concrete driveway" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/patio-firepit.jpg" alt="Patio with fire pit" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/firepit-patio-1.jpg" alt="Fire pit and patio area" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining-patio.jpg" alt="Retaining wall with patio" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining-patio-1.jpg" alt="Retaining wall and patio design" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining-patio-2.jpg" alt="Retaining wall patio project" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining-patio-3.jpg" alt="Custom retaining wall and patio" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining-patio-firepit.jpg" alt="Retaining wall, patio, and fire pit" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining-driveway.jpg" alt="Retaining wall with driveway" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining-driveway-water.jpg" alt="Retaining wall, driveway, and water feature" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining-driveway-water-1.jpg" alt="Retaining wall, driveway, and water feature" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/water-firepit-patio.jpg" alt="Water feature, fire pit, and patio" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/water-firepit-patio-1.jpg" alt="Water feature, fire pit, and patio" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/water-firepit-patio-2.jpg" alt="Water feature, fire pit, and patio" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/water-firepit-patio-3.jpg" alt="Water feature, fire pit, and patio" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/water-firepit-patio-4.jpg" alt="Water feature, fire pit, and patio" loading="lazy"></div>
       <!-- ADD NEW PATIOS/DRIVEWAYS PHOTOS HERE -->
     </div>
   </div>
@@ -797,30 +561,30 @@ footer { background: #111009; padding: 3rem 5% 1.5rem; }
     <p class="section-body">Structural walls hand-formed and carved to look like natural stone — built to hold and crafted to impress.</p>
     <div class="gallery-grid" id="gridWalls">
       <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining.jpg" alt="Hand-carved retaining wall" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining1.jpg" alt="Custom retaining wall" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining1.jpeg" alt="Carved concrete retaining wall" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining2.jpg" alt="Hand-carved retaining wall" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining3.jpg" alt="Custom concrete retaining wall" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining4.jpg" alt="Natural stone look retaining wall" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining01.jpg" alt="Retaining wall project" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining02.jpg" alt="Hand-formed retaining wall" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining22.jpg" alt="Carved retaining wall" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining24.jpg" alt="Custom retaining wall design" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining27.jpg" alt="Hand-carved concrete wall" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining29.jpg" alt="Retaining wall with texture" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining30.jpg" alt="Custom concrete retaining wall" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining34.jpg" alt="Hand-carved retaining wall" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retainingpatio.jpg" alt="Retaining wall with patio" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retainingpatio1.jpg" alt="Retaining wall and patio design" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retainingpatio2.jpg" alt="Retaining wall patio project" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retainingpatio3.jpg" alt="Custom retaining wall and patio" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retainingpatiofirepit.jpg" alt="Retaining wall, patio, and fire pit" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retainingdriveway.jpg" alt="Retaining wall with driveway" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retainingdrivewaywater.jpg" alt="Retaining wall, driveway, and water feature" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retainingdrivewaywater1.jpg" alt="Retaining wall, driveway, and water feature" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retainingwater.jpg" alt="Retaining wall with water feature" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retainingwaterfirepit.jpg" alt="Retaining wall, water feature, and fire pit" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/waterretaining.jpg" alt="Water feature and retaining wall" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining-1.jpg" alt="Custom retaining wall" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining-1.jpeg" alt="Carved concrete retaining wall" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining-2.jpg" alt="Hand-carved retaining wall" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining-3.jpg" alt="Custom concrete retaining wall" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining-4.jpg" alt="Natural stone look retaining wall" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining-01.jpg" alt="Retaining wall project" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining-02.jpg" alt="Hand-formed retaining wall" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining-22.jpg" alt="Carved retaining wall" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining-24.jpg" alt="Custom retaining wall design" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining-27.jpg" alt="Hand-carved concrete wall" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining-29.jpg" alt="Retaining wall with texture" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining-30.jpg" alt="Custom concrete retaining wall" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining-34.jpg" alt="Hand-carved retaining wall" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining-patio.jpg" alt="Retaining wall with patio" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining-patio-1.jpg" alt="Retaining wall and patio design" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining-patio-2.jpg" alt="Retaining wall patio project" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining-patio-3.jpg" alt="Custom retaining wall and patio" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining-patio-firepit.jpg" alt="Retaining wall, patio, and fire pit" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining-driveway.jpg" alt="Retaining wall with driveway" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining-driveway-water.jpg" alt="Retaining wall, driveway, and water feature" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining-driveway-water-1.jpg" alt="Retaining wall, driveway, and water feature" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining-water.jpg" alt="Retaining wall with water feature" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining-water-firepit.jpg" alt="Retaining wall, water feature, and fire pit" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/water-retaining.jpg" alt="Water feature and retaining wall" loading="lazy"></div>
       <!-- ADD NEW RETAINING WALL PHOTOS HERE -->
     </div>
   </div>
@@ -835,23 +599,24 @@ footer { background: #111009; padding: 3rem 5% 1.5rem; }
     <h2 class="section-title">Outdoor Kitchens &amp; Fire Pits</h2>
     <p class="section-body">Custom fire pits, seating walls, and outdoor kitchen features built for year-round enjoyment.</p>
     <div class="gallery-grid" id="gridFirepits">
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/kitchen1.png" alt="Custom outdoor kitchen" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/kitchen3.jpg" alt="Outdoor kitchen build" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/kitchen4.jpg" alt="Custom concrete outdoor kitchen" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/kitchen5.jpg" alt="Outdoor kitchen and grill area" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/kitchen8.png" alt="Outdoor kitchen design" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/kitchen10.jpg" alt="Custom outdoor kitchen" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/kitchen-1.png" alt="Custom outdoor kitchen" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/kitchen-3.jpg" alt="Outdoor kitchen build" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/kitchen-4.jpg" alt="Custom concrete outdoor kitchen" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/kitchen-5.jpg" alt="Outdoor kitchen and grill area" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/kitchen-8.png" alt="Outdoor kitchen design" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/kitchen-10.jpg" alt="Custom outdoor kitchen" loading="lazy"></div>
       <div class="gallery-thumb" onclick="openLb(this)"><img src="images/firepit.jpg" alt="Custom concrete fire pit" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/firepit1.jpg" alt="Fire pit with seating area" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/patiofirepit.jpg" alt="Patio with fire pit" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/firepitpatio1.jpg" alt="Fire pit and patio area" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retainingpatiofirepit.jpg" alt="Retaining wall, patio, and fire pit" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retainingwaterfirepit.jpg" alt="Retaining wall, water feature, and fire pit" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/waterfirepitpatio.jpg" alt="Water feature, fire pit, and patio" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/waterfirepitpatio1.jpg" alt="Water feature, fire pit, and patio" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/waterfirepitpatio2.jpg" alt="Water feature, fire pit, and patio" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/waterfirepitpatio3.jpg" alt="Water feature, fire pit, and patio" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/waterfirepitpatio4.jpg" alt="Water feature, fire pit, and patio" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/firepit-1.jpg" alt="Fire pit with seating area" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/patio-firepit.jpg" alt="Patio with fire pit" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/firepit-patio.jpg" alt="Patio with fire pit" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/firepit-patio-1.jpg" alt="Fire pit and patio area" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining-patio-firepit.jpg" alt="Retaining wall, patio, and fire pit" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining-water-firepit.jpg" alt="Retaining wall, water feature, and fire pit" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/water-firepit-patio.jpg" alt="Water feature, fire pit, and patio" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/water-firepit-patio-1.jpg" alt="Water feature, fire pit, and patio" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/water-firepit-patio-2.jpg" alt="Water feature, fire pit, and patio" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/water-firepit-patio-3.jpg" alt="Water feature, fire pit, and patio" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/water-firepit-patio-4.jpg" alt="Water feature, fire pit, and patio" loading="lazy"></div>
       <!-- ADD NEW KITCHEN/FIREPIT PHOTOS HERE -->
     </div>
   </div>
@@ -867,35 +632,31 @@ footer { background: #111009; padding: 3rem 5% 1.5rem; }
     <p class="section-body">Custom ponds, waterfalls, and fountains hand-carved from concrete.</p>
     <div class="gallery-grid" id="gridWater">
       <div class="gallery-thumb" onclick="openLb(this)"><img src="images/water.jpg" alt="Custom water feature" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/water1.jpg" alt="Concrete waterfall and pond" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/water2.jpg" alt="Custom water feature design" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/water3.jpg" alt="Waterfall feature" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/water4.jpg" alt="Pond and water feature" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retainingwater.jpg" alt="Retaining wall with water feature" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/waterretaining.jpg" alt="Water feature and retaining wall" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retainingdrivewaywater.jpg" alt="Retaining wall, driveway, and water feature" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retainingdrivewaywater1.jpg" alt="Retaining wall, driveway, and water feature" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retainingwaterfirepit.jpg" alt="Retaining wall, water feature, and fire pit" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/waterfirepitpatio.jpg" alt="Water feature, fire pit, and patio" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/waterfirepitpatio1.jpg" alt="Water feature, fire pit, and patio" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/waterfirepitpatio2.jpg" alt="Water feature, fire pit, and patio" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/waterfirepitpatio3.jpg" alt="Water feature, fire pit, and patio" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/waterfirepitpatio4.jpg" alt="Water feature, fire pit, and patio" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/water-1.jpg" alt="Concrete waterfall and pond" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/water-2.jpg" alt="Custom water feature design" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/water-3.jpg" alt="Waterfall feature" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/water-4.jpg" alt="Pond and water feature" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining-water.jpg" alt="Retaining wall with water feature" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/water-retaining.jpg" alt="Water feature and retaining wall" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining-driveway-water.jpg" alt="Retaining wall, driveway, and water feature" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining-driveway-water-1.jpg" alt="Retaining wall, driveway, and water feature" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining-water-firepit.jpg" alt="Retaining wall, water feature, and fire pit" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/water-firepit-patio.jpg" alt="Water feature, fire pit, and patio" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/water-firepit-patio-1.jpg" alt="Water feature, fire pit, and patio" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/water-firepit-patio-2.jpg" alt="Water feature, fire pit, and patio" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/water-firepit-patio-3.jpg" alt="Water feature, fire pit, and patio" loading="lazy"></div>
+      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/water-firepit-patio-4.jpg" alt="Water feature, fire pit, and patio" loading="lazy"></div>
       <!-- ADD NEW WATER FEATURE PHOTOS HERE -->
     </div>
   </div>
 </div>
 
-
-<!-- LIGHTBOX -->
 <div class="lightbox" id="lightbox">
   <button class="lb-close" onclick="closeLb()">&#x2715;</button>
   <img id="lbImg" src="" alt="">
 </div>
 
-
-<script>
-// ── NAV / MOBILE ──
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 function toggleMobile() {
   document.getElementById('hamburger').classList.toggle('open');
   document.getElementById('mobileMenu').classList.toggle('open');
@@ -914,31 +675,37 @@ window.addEventListener('scroll', () => {
     window.scrollY > 50 ? 'rgba(18,17,13,0.99)' : 'rgba(22,21,17,0.96)';
 });
 
-// ── PAGE SWITCHING ──
 const galleries = ['galleryPatios', 'galleryWalls', 'galleryFirepits', 'galleryWater'];
 
-function showHome() {
+function showHome(fromPopState) {
   document.getElementById('homePage').style.display = 'block';
   galleries.forEach(id => document.getElementById(id).classList.remove('active'));
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+  if (!fromPopState) history.pushState({ page: 'home' }, '', '#services');
+  document.getElementById('services').scrollIntoView({ behavior: 'smooth' });
   setTimeout(initReveal, 80);
 }
 
-function showGallery(cat) {
+function showGallery(cat, fromPopState) {
   closeMobile();
   document.getElementById('homePage').style.display = 'none';
   galleries.forEach(id => document.getElementById(id).classList.remove('active'));
-  const map = {
-    patios:   'galleryPatios',
-    walls:    'galleryWalls',
-    firepits: 'galleryFirepits',
-    water:    'galleryWater'
-  };
+  const map = { patios: 'galleryPatios', walls: 'galleryWalls', firepits: 'galleryFirepits', water: 'galleryWater' };
   if (map[cat]) document.getElementById(map[cat]).classList.add('active');
+  if (!fromPopState) history.pushState({ page: 'gallery', cat }, '', '#' + cat);
   window.scrollTo({ top: 0, behavior: 'instant' });
 }
 
-// ── LIGHTBOX ──
+window.addEventListener('popstate', e => {
+  if (!e.state || e.state.page === 'home') {
+    showHome(true);
+  } else if (e.state.page === 'gallery') {
+    showGallery(e.state.cat, true);
+  }
+});
+
+// Set initial history state
+history.replaceState({ page: 'home' }, '', window.location.href);
+
 function openLb(el) {
   const img = el.querySelector('img');
   document.getElementById('lbImg').src = img.src;
@@ -955,7 +722,6 @@ document.getElementById('lightbox').addEventListener('click', e => {
 });
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLb(); });
 
-// ── SCROLL REVEAL ──
 function initReveal() {
   const obs = new IntersectionObserver(entries => {
     entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
@@ -967,7 +733,6 @@ function initReveal() {
 }
 initReveal();
 
-// ── MATH CAPTCHA ──
 let captchaAnswer = 0;
 function newCaptcha() {
   const a = Math.floor(Math.random() * 9) + 1;
@@ -979,10 +744,8 @@ function newCaptcha() {
 }
 newCaptcha();
 
-// ── RATE LIMIT ──
 let lastSubmit = 0;
 
-// ── FORM SUBMIT ──
 // TODO: When Caleb approves — add Formspree fetch here
 // Replace the success block with:
 //   await fetch('https://formspree.io/f/YOUR_ID', {
@@ -993,18 +756,12 @@ let lastSubmit = 0;
 function submitForm() {
   const msgEl = document.getElementById('formMsg');
   msgEl.className = 'form-msg';
-
-  // Honeypot — silent reject if filled
   if (document.getElementById('hp_website').value !== '') return;
-
-  // Rate limit — 30s cooldown
   if (Date.now() - lastSubmit < 30000) {
     msgEl.textContent = 'Please wait a moment before submitting again.';
     msgEl.className = 'form-msg error';
     return;
   }
-
-  // Required fields
   const fname = document.getElementById('fname').value.trim();
   const lname = document.getElementById('lname').value.trim();
   const phone = document.getElementById('phone').value.trim();
@@ -1023,16 +780,12 @@ function submitForm() {
     msgEl.className = 'form-msg error';
     return;
   }
-
-  // Email format if provided
   const email = document.getElementById('email').value.trim();
   if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
     msgEl.textContent = "That email address doesn't look quite right.";
     msgEl.className = 'form-msg error';
     return;
   }
-
-  // Captcha
   const ans = parseInt(document.getElementById('captchaAns').value, 10);
   if (isNaN(ans) || ans !== captchaAnswer) {
     msgEl.textContent = 'Incorrect answer to the math question — please try again.';
@@ -1040,8 +793,6 @@ function submitForm() {
     newCaptcha();
     return;
   }
-
-  // All good
   lastSubmit = Date.now();
   newCaptcha();
   msgEl.innerHTML = '&#10003;&nbsp; Message received! Caleb will be in touch soon. You can also call or text directly: <a href="tel:6189548268" style="color:var(--river)">(618) 954-8268</a>';
