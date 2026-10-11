@@ -755,14 +755,9 @@ newCaptcha();
 
 let lastSubmit = 0;
 
-// TODO: When Caleb approves — add Formspree fetch here
-// Replace the success block with:
-//   await fetch('https://formspree.io/f/YOUR_ID', {
-//     method: 'POST',
-//     headers: { 'Content-Type': 'application/json' },
-//     body: JSON.stringify({ name: fname+' '+lname, phone, email, service, message })
-//   });
-function submitForm() {
+const FORM_ENDPOINT = 'https://formspree.io/f/mnjoeqkd';
+
+async function submitForm() {
   const msgEl = document.getElementById('formMsg');
   msgEl.className = 'form-msg';
   if (document.getElementById('hp_website').value !== '') return;
@@ -802,12 +797,37 @@ function submitForm() {
     newCaptcha();
     return;
   }
-  lastSubmit = Date.now();
-  newCaptcha();
-  msgEl.innerHTML = '&#10003;&nbsp; Message received! Caleb will be in touch soon. You can also call or text directly: <a href="tel:6189548268" style="color:var(--river)">(618) 954-8268</a>';
-  msgEl.className = 'form-msg success';
-  ['fname', 'lname', 'phone', 'email', 'message'].forEach(id => document.getElementById(id).value = '');
-  document.getElementById('service').selectedIndex = 0;
+  const name = fname + ' ' + lname;
+  const service = document.getElementById('service').value || 'Not provided';
+  const message = document.getElementById('message').value.trim() || 'Not provided';
+  const payload = { name, phone, service, message, _subject: 'New quote request: ' + name };
+  if (email) { payload.email = email; payload._replyto = email; }
+
+  const btn = document.querySelector('.submit-btn');
+  const btnLabel = btn.innerHTML;
+  btn.disabled = true;
+  btn.textContent = 'Sending...';
+  try {
+    const res = await fetch(FORM_ENDPOINT, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify(payload)
+    });
+    if (!res.ok) throw new Error('Formspree ' + res.status);
+    lastSubmit = Date.now();
+    newCaptcha();
+    msgEl.innerHTML = '&#10003;&nbsp; Message received! Caleb will be in touch soon. You can also call or text directly: <a href="tel:6189548268" style="color:var(--river)">(618) 954-8268</a>';
+    msgEl.className = 'form-msg success';
+    ['fname', 'lname', 'phone', 'email', 'message'].forEach(id => document.getElementById(id).value = '');
+    document.getElementById('service').selectedIndex = 0;
+  } catch (err) {
+    newCaptcha();
+    msgEl.innerHTML = 'Something went wrong sending your request. Please try again, or call or text Caleb at <a href="tel:6189548268" style="color:var(--river)">(618) 954-8268</a>.';
+    msgEl.className = 'form-msg error';
+  } finally {
+    btn.disabled = false;
+    btn.innerHTML = btnLabel;
+  }
 }
 </script>
 </body>
