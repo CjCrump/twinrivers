@@ -10,11 +10,11 @@ A business website for a concrete contractor in Brighton, IL. It includes a phot
 
 - Vanilla HTML, CSS, JavaScript (no framework, no build step)
 - Google Maps embed
-- Cloudflare Pages (hosting, auto-deploys on push to main)
+- GitHub Pages (hosting, auto-deploys on push to main); domain registered at Wix with DNS pointed at GitHub Pages
 
 ## Live demo
 
-https://twinriversconcrete.com
+https://www.twinriversconcrete.com
 
 ## Screenshot
 
