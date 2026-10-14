@@ -3,19 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>try{var t=sessionStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
 <title>Concrete Contractor Brighton, IL | Twin Rivers Concrete</title>
 <meta name="description" content="Brighton, IL concrete contractor. Stamped patios, driveways, hand-carved retaining walls, fire pits and water features across Greater St. Louis. Free quotes.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://www.twinriversconcrete.com/">
-<link rel="icon" type="image/png" href="images/favicon.png">
-<link rel="apple-touch-icon" href="images/favicon.png">
+<link rel="icon" type="image/png" href="/images/favicon.png">
+<link rel="apple-touch-icon" href="/images/favicon.png">
+<meta name="theme-color" content="#161511">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.twinriversconcrete.com/">
 <meta property="og:title" content="Concrete Contractor Brighton, IL | Twin Rivers Concrete">
 <meta property="og:description" content="Brighton, IL concrete contractor. Stamped patios, driveways, hand-carved retaining walls, fire pits and water features across Greater St. Louis. Free quotes.">
 <meta property="og:image" content="https://www.twinriversconcrete.com/images/og-retaining.jpg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Twin Rivers Concrete logo beside a hand-carved stone-look retaining wall in Brighton, IL">
 <meta property="og:site_name" content="Twin Rivers Concrete">
 <meta property="og:locale" content="en_US">
@@ -27,8 +27,9 @@
 {
   "@context": "https://schema.org",
   "@type": "HomeAndConstructionBusiness",
+  "@id": "https://www.twinriversconcrete.com/#business",
   "name": "Twin Rivers Concrete",
-  "description": "Custom stamped patios, hand-carved retaining walls, outdoor kitchens, fire pits, and water features serving Brighton, IL and the Greater St. Louis area.",
+  "description": "Custom stamped patios, driveways, hand-carved retaining walls, outdoor kitchens, fire pits, and water features serving Brighton, IL and the Greater St. Louis area.",
   "url": "https://www.twinriversconcrete.com/",
   "telephone": "+16189548268",
   "email": "twinriversconcrete@outlook.com",
@@ -47,21 +48,98 @@
     "longitude": -90.1415
   },
   "areaServed": [
-    "Brighton, IL", "Alton, IL", "Godfrey, IL", "Edwardsville, IL",
-    "Saint Louis, MO", "Wood River, IL", "Bethalto, IL", "Roxana, IL",
-    "East Alton, IL", "Jerseyville, IL", "Collinsville, IL", "Granite City, IL"
+    "Brighton, IL",
+    "Alton, IL",
+    "Godfrey, IL",
+    "Edwardsville, IL",
+    "Saint Louis, MO",
+    "Wood River, IL",
+    "Bethalto, IL",
+    "Roxana, IL",
+    "East Alton, IL",
+    "Jerseyville, IL",
+    "Collinsville, IL",
+    "Granite City, IL"
   ],
   "priceRange": "$$",
   "knowsAbout": [
-    "Stamped Concrete Patios", "Driveways", "Hand-Carved Retaining Walls",
-    "Outdoor Kitchens", "Fire Pits", "Water Features", "Bio Design Pools"
+    "Stamped Concrete Patios",
+    "Concrete Driveways",
+    "Hand-Carved Retaining Walls",
+    "Outdoor Kitchens",
+    "Fire Pits",
+    "Water Features",
+    "Bio Design Pools"
   ],
-  "openingHoursSpecification": [{
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-    "opens": "07:00",
-    "closes": "20:00"
-  }],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Concrete Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Stamped Concrete Patios",
+          "url": "https://www.twinriversconcrete.com/stamped-concrete-patios/"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Concrete Driveways",
+          "url": "https://www.twinriversconcrete.com/concrete-driveways/"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Hand-Carved Retaining Walls",
+          "url": "https://www.twinriversconcrete.com/retaining-walls/"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Outdoor Kitchens",
+          "url": "https://www.twinriversconcrete.com/outdoor-kitchens/"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Fire Pits & Outdoor Fireplaces",
+          "url": "https://www.twinriversconcrete.com/fire-pits/"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Water Features",
+          "url": "https://www.twinriversconcrete.com/water-features/"
+        }
+      }
+    ]
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "opens": "07:00",
+      "closes": "20:00"
+    }
+  ],
   "sameAs": [
     "https://www.facebook.com/p/Twin-Rivers-Concrete-61554250453737/"
   ]
@@ -69,226 +147,64 @@
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="image" href="images/hero.jpg" fetchpriority="high">
+<link rel="preload" as="image" href="/images/hero.jpg" fetchpriority="high">
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-<style>
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-:root {
-  --stone:       #252420;
-  --stone-mid:   #302f29;
-  --stone-light: #48463d;
-  --cream:       #e6ddc8;
-  --cream-dark:  #bfb49a;
-  --river:       #3db8d4;
-  --river-dark:  #1a8ea8;
-  --text-light:  #ede8da;
-  --text-muted:  #968e7a;
-}
-html { scroll-behavior: smooth; }
-body { font-family: 'Lato', sans-serif; background: var(--stone); color: var(--text-light); overflow-x: hidden; }
-nav {
-  position: fixed; top: 0; left: 0; right: 0; z-index: 200;
-  display: flex; align-items: center; justify-content: space-between;
-  padding: 0 5%; height: 68px;
-  background: rgba(22,21,17,0.96); backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(61,184,212,0.13); transition: background 0.3s;
-}
-.nav-logo img { height: 52px; width: auto; }
-.nav-links { display: flex; gap: 2rem; list-style: none; }
-.nav-links a { font-family: 'Oswald', sans-serif; font-size: 0.8rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--cream-dark); text-decoration: none; transition: color 0.2s; }
-.nav-links a:hover { color: var(--river); }
-.nav-cta { font-family: 'Oswald', sans-serif; font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.5rem 1.3rem; background: var(--river); color: #fff; text-decoration: none; transition: background 0.2s; }
-.nav-cta:hover { background: var(--river-dark); }
-.hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 4px; }
-.hamburger span { display: block; width: 25px; height: 2px; background: var(--cream); transition: all 0.3s; }
-.hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
-.hamburger.open span:nth-child(2) { opacity: 0; }
-.hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
-.mobile-menu { display: none; position: fixed; top: 68px; left: 0; right: 0; background: rgba(22,21,17,0.98); z-index: 199; flex-direction: column; padding: 1rem 5% 1.5rem; border-bottom: 1px solid rgba(61,184,212,0.13); }
-.mobile-menu.open { display: flex; }
-.mobile-menu a { font-family: 'Oswald', sans-serif; font-size: 1rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--cream-dark); text-decoration: none; padding: 0.8rem 0; border-bottom: 1px solid rgba(255,255,255,0.06); }
-.mobile-menu a:hover { color: var(--river); }
-.mobile-menu .m-cta { margin-top: 1rem; background: var(--river); color: #fff; text-align: center; padding: 0.85rem; border-bottom: none; }
-.hero { position: relative; min-height: 100svh; display: flex; align-items: flex-end; overflow: hidden; }
-.hero-bg { position: absolute; inset: 0; background-image: url('images/hero.jpg'); background-size: cover; background-position: center 40%; filter: brightness(0.42); animation: slowzoom 20s ease-in-out infinite alternate; }
-@keyframes slowzoom { from { transform: scale(1.05); } to { transform: scale(1.0); } }
-.hero-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(18,17,13,0.95) 0%, rgba(18,17,13,0.3) 55%, transparent 100%); }
-.hero-content { position: relative; z-index: 2; width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 5% 7%; }
-.hero-eyebrow { font-family: 'Oswald', sans-serif; font-size: 0.7rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--river); margin-bottom: 0.8rem; font-weight: 400; line-height: 1.5; }
-.hero .hero-title { font-family: 'Oswald', sans-serif; font-size: clamp(2.8rem, 7.5vw, 5.8rem); font-weight: 700; line-height: 0.95; text-transform: uppercase; letter-spacing: 0.03em; color: var(--text-light); margin-bottom: 1.3rem; }
-.hero .hero-title em { color: var(--river); font-style: normal; }
-.hero-sub { font-size: clamp(0.9rem, 1.8vw, 1.1rem); color: var(--cream-dark); font-weight: 300; max-width: 520px; line-height: 1.7; margin-bottom: 2.2rem; }
-.hero-btns { display: flex; gap: 1rem; flex-wrap: wrap; }
-.btn-primary { font-family: 'Oswald', sans-serif; font-size: 0.85rem; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.85rem 2rem; background: var(--river); color: #fff; text-decoration: none; transition: background 0.2s, transform 0.15s; display: inline-block; }
-.btn-primary:hover { background: var(--river-dark); transform: translateY(-2px); }
-.btn-ghost { font-family: 'Oswald', sans-serif; font-size: 0.85rem; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.85rem 2rem; border: 1.5px solid rgba(230,221,200,0.4); color: var(--cream); text-decoration: none; transition: border-color 0.2s, color 0.2s; display: inline-block; }
-.btn-ghost:hover { border-color: var(--river); color: var(--river); }
-.stats-bar { background: var(--river); padding: 1.1rem 5%; display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap; }
-.stat { display: flex; align-items: center; gap: 0.65rem; }
-.stat-num { font-family: 'Oswald', sans-serif; font-size: 1.5rem; font-weight: 700; color: #fff; }
-.stat-label { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(255,255,255,0.82); line-height: 1.25; }
-.section-label { font-family: 'Oswald', sans-serif; font-size: 0.7rem; letter-spacing: 0.28em; text-transform: uppercase; color: var(--river); margin-bottom: 0.5rem; }
-.section-title { font-family: 'Oswald', sans-serif; font-size: clamp(1.8rem, 4vw, 2.9rem); font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; color: var(--text-light); line-height: 1.05; margin-bottom: 1rem; }
-.section-body { font-size: 0.95rem; font-weight: 300; line-height: 1.8; color: var(--cream-dark); max-width: 560px; }
-#services { padding: 5rem 5%; background: var(--stone-mid); }
-.services-inner { max-width: 1200px; margin: 0 auto; }
-.services-header { margin-bottom: 2.5rem; }
-.services-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px; }
-.service-card { position: relative; overflow: hidden; aspect-ratio: 16/10; cursor: pointer; display: block; text-decoration: none; }
-.service-card img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease, filter 0.4s ease; filter: brightness(0.75); }
-.service-card:hover img { transform: scale(1.06); filter: brightness(0.50); }
-.service-card-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(18,17,13,0.93) 0%, rgba(18,17,13,0.15) 65%, transparent 100%); }
-.service-card-body { position: absolute; bottom: 0; left: 0; right: 0; padding: 1.75rem 1.75rem 1.5rem; z-index: 2; }
-.service-card-title { font-family: 'Oswald', sans-serif; font-size: clamp(1.1rem, 2vw, 1.4rem); font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: #fff; margin-bottom: 0.5rem; line-height: 1.1; }
-.service-card-desc { font-size: 0.82rem; font-weight: 300; line-height: 1.6; color: var(--cream-dark); max-width: 380px; margin-bottom: 1rem; }
-.service-card-link { font-family: 'Oswald', sans-serif; font-size: 0.72rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--river); display: flex; align-items: center; gap: 0.4rem; transform: translateY(6px); opacity: 0; transition: opacity 0.3s, transform 0.3s; }
-.service-card:hover .service-card-link { opacity: 1; transform: translateY(0); }
-.service-card-link::after { content: '→'; }
-.gallery-page { display: none; padding: 5.5rem 5% 4rem; background: var(--stone); min-height: 100vh; }
-.gallery-page.active { display: block; }
-.gallery-page-inner { max-width: 1200px; margin: 0 auto; }
-.gallery-back { font-family: 'Oswald', sans-serif; font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--river); background: none; border: none; cursor: pointer; display: flex; align-items: center; gap: 0.5rem; margin-bottom: 2rem; padding: 0; }
-.gallery-back::before { content: '←'; }
-.gallery-back:hover { color: var(--cream); }
-.gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 6px; margin-top: 1.5rem; }
-.gallery-thumb { overflow: hidden; aspect-ratio: 4/3; cursor: pointer; position: relative; }
-.gallery-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.4s ease; }
-.gallery-thumb:hover img { transform: scale(1.05); }
-#biodesign { padding: 5rem 5%; background: var(--stone-mid); }
-.biodesign-inner { max-width: 1200px; margin: 0 auto; }
-.biodesign-header { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 2.5rem; flex-wrap: wrap; gap: 1.5rem; }
-.biodesign-badge { font-family: 'Oswald', sans-serif; font-size: 0.7rem; letter-spacing: 0.18em; text-transform: uppercase; padding: 0.4rem 1rem; flex-shrink: 0; align-self: flex-start; background: rgba(61,184,212,0.1); border: 1px solid rgba(61,184,212,0.35); color: var(--river); }
-.biodesign-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; }
-.bio-card { position: relative; overflow: hidden; aspect-ratio: 3/4; }
-.bio-card img { width: 100%; height: 100%; object-fit: cover; display: block; filter: brightness(0.50) saturate(0.5); }
-.bio-card-overlay { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.75rem; text-align: center; padding: 1.5rem; }
-.bio-card-label { font-family: 'Oswald', sans-serif; font-size: 0.85rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); }
-.bio-inner-badge { font-family: 'Oswald', sans-serif; font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase; padding: 0.3rem 0.9rem; border: 1px solid rgba(61,184,212,0.4); color: var(--river); background: rgba(0,0,0,0.4); }
-#about { padding: 5rem 5%; background: var(--stone); }
-.about-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
-.about-img-wrap { position: relative; }
-.about-img-wrap img { width: 100%; aspect-ratio: 4/5; object-fit: cover; display: block; }
-.about-accent { position: absolute; bottom: -10px; right: -10px; width: 55%; height: 38%; z-index: -1; }
-.about-stat-badge { position: absolute; bottom: 1.5rem; right: 1.5rem; background: var(--river); color: #fff; padding: 0.9rem 1.1rem; font-family: 'Oswald', sans-serif; text-transform: uppercase; text-align: center; font-size: 0.72rem; letter-spacing: 0.1em; line-height: 1.4; }
-.about-stat-badge strong { display: block; font-size: 1.9rem; line-height: 1; }
-.pillars { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 2rem; }
-.pillar { padding: 1.1rem 1.1rem 1.1rem 1rem; border-left: 2px solid var(--river); }
-.pillar-title { font-family: 'Oswald', sans-serif; font-size: 0.75rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--river); margin-bottom: 0.3rem; }
-.pillar-text { font-size: 0.82rem; font-weight: 300; line-height: 1.55; color: var(--cream-dark); }
-#service-area { padding: 5rem 5%; background: var(--stone-mid); }
-.area-inner { max-width: 1200px; margin: 0 auto; }
-.area-layout { display: grid; grid-template-columns: 1fr 1.6fr; gap: 4rem; align-items: start; margin-top: 2rem; }
-.area-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1.5rem; }
-.area-tag { font-size: 0.75rem; font-family: 'Oswald', sans-serif; letter-spacing: 0.08em; text-transform: uppercase; padding: 0.35rem 0.8rem; border: 1px solid rgba(61,184,212,0.28); color: var(--cream-dark); }
-.map-wrap { border: 1.5px solid rgba(61,184,212,0.18); overflow: hidden; background: var(--stone); }
-.map-wrap iframe { width: 100%; height: 420px; border: 0; display: block; filter: invert(90%) hue-rotate(185deg) saturate(0.75) brightness(0.72); }
-#contact { padding: 5rem 5%; background: var(--stone); }
-.contact-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start; }
-.contact-detail { display: flex; align-items: flex-start; gap: 1rem; margin-top: 1.75rem; padding-top: 1.75rem; border-top: 1px solid rgba(255,255,255,0.07); }
-.contact-detail:first-of-type { border-top: none; padding-top: 0; margin-top: 1.5rem; }
-.c-icon { width: 36px; height: 36px; background: var(--river); flex-shrink: 0; display: flex; align-items: center; justify-content: center; font-size: 0.9rem; }
-.c-key { font-family: 'Oswald', sans-serif; font-size: 0.68rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 0.2rem; }
-.c-val { font-size: 0.92rem; color: var(--text-light); font-weight: 300; line-height: 1.5; }
-.c-val a { color: var(--text-light); text-decoration: none; }
-.c-val a:hover { color: var(--river); }
-.contact-form { background: var(--stone-mid); padding: 2.5rem; }
-.form-title { font-family: 'Oswald', sans-serif; font-size: 1rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-light); margin-bottom: 1.5rem; }
-.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
-.form-group { display: flex; flex-direction: column; margin-bottom: 0.85rem; }
-.form-group label { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 0.4rem; }
-.form-group input, .form-group select, .form-group textarea { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); color: var(--text-light); padding: 0.7rem 0.9rem; font-family: 'Lato', sans-serif; font-size: 0.88rem; outline: none; transition: border-color 0.2s; width: 100%; }
-.form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--river); }
-.form-group select option { background: var(--stone-mid); }
-.form-group textarea { resize: vertical; min-height: 100px; }
-.captcha-row { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.85rem; flex-wrap: wrap; }
-.captcha-q { font-size: 0.88rem; color: var(--cream-dark); font-weight: 400; white-space: nowrap; }
-.captcha-q strong { color: var(--river); }
-.submit-btn { font-family: 'Oswald', sans-serif; font-size: 0.85rem; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.95rem 2rem; background: var(--river); color: #fff; border: none; cursor: pointer; width: 100%; transition: background 0.2s; margin-top: 0.25rem; }
-.submit-btn:hover { background: var(--river-dark); }
-.form-msg { font-size: 0.82rem; margin-top: 0.75rem; padding: 0.7rem 0.9rem; display: none; }
-.form-msg.success { background: rgba(61,184,212,0.12); border: 1px solid rgba(61,184,212,0.3); color: var(--river); display: block; }
-.form-msg.error { background: rgba(184,61,40,0.1); border: 1px solid rgba(184,61,40,0.3); color: #e07060; display: block; }
-.rate-note { font-size: 0.7rem; color: var(--text-muted); margin-top: 0.4rem; text-align: center; }
-footer { background: #111009; padding: 3rem 5% 1.5rem; }
-.footer-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding-bottom: 2rem; border-bottom: 1px solid rgba(255,255,255,0.07); flex-wrap: wrap; gap: 2rem; }
-.footer-logo img { height: 60px; }
-.footer-links { display: flex; gap: 2rem; list-style: none; flex-wrap: wrap; }
-.footer-links a { font-family: 'Oswald', sans-serif; font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-muted); text-decoration: none; }
-.footer-links a:hover { color: var(--river); }
-.footer-bottom { max-width: 1200px; margin: 1.25rem auto 0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
-.footer-copy { font-size: 0.72rem; color: var(--text-muted); }
-.lightbox { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.93); z-index: 999; align-items: center; justify-content: center; padding: 2rem; }
-.lightbox.open { display: flex; }
-.lightbox img { max-width: 100%; max-height: 88vh; object-fit: contain; }
-.lb-close { position: absolute; top: 1.25rem; right: 1.5rem; background: none; border: none; color: #fff; font-size: 1.8rem; cursor: pointer; line-height: 1; }
-.reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
-.reveal.visible { opacity: 1; transform: translateY(0); }
-@media (max-width: 940px) {
-  .nav-links, .nav-cta { display: none; }
-  .hamburger { display: flex; }
-  .services-grid { grid-template-columns: 1fr; }
-  .service-card { aspect-ratio: 16/9; }
-  .biodesign-grid { grid-template-columns: 1fr 1fr; }
-  .about-inner { grid-template-columns: 1fr; gap: 2.5rem; }
-  .about-accent { display: none; }
-  .contact-inner { grid-template-columns: 1fr; gap: 2.5rem; }
-  .area-layout { grid-template-columns: 1fr; gap: 2rem; }
-}
-@media (max-width: 640px) {
-  .service-card { aspect-ratio: 4/3; }
-  .biodesign-grid { grid-template-columns: 1fr; }
-  .stats-bar { gap: 1.5rem; }
-  .form-row { grid-template-columns: 1fr; }
-  #services, #biodesign, #about, #service-area, #contact { padding: 3.5rem 4%; }
-  .contact-form { padding: 1.75rem 1.25rem; }
-  .footer-inner { flex-direction: column; align-items: flex-start; }
-  .map-wrap iframe { height: 280px; }
-  .pillars { grid-template-columns: 1fr; }
-  .gallery-grid { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
-  .about-img-wrap img { aspect-ratio: 16/9; }
-}
-</style>
+<link rel="stylesheet" href="/css/style.css">
 </head>
-<body>
+<body data-page="home">
 
-<nav id="mainNav">
-  <a class="nav-logo" href="#" onclick="showHome(); return false;">
-    <img src="images/logo.jpg" alt="Twin Rivers Concrete">
-  </a>
+<nav id="mainNav" aria-label="Main">
+  <a class="nav-logo" href="/"><img src="/images/logo.jpg" alt="Twin Rivers Concrete home" width="104" height="52"></a>
   <ul class="nav-links">
-    <li><a href="#" onclick="showHome(); return false;">Services</a></li>
-    <li><a href="#biodesign">Bio Design</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#service-area">Service Area</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li class="nav-drop">
+      <a href="/#services">Services</a>
+      <ul class="nav-drop-menu">
+          <li><a href="/stamped-concrete-patios/">Stamped Concrete Patios</a></li>
+          <li><a href="/concrete-driveways/">Concrete Driveways</a></li>
+          <li><a href="/retaining-walls/">Hand-Carved Retaining Walls</a></li>
+          <li><a href="/outdoor-kitchens/">Outdoor Kitchens</a></li>
+          <li><a href="/fire-pits/">Fire Pits &amp; Outdoor Fireplaces</a></li>
+          <li><a href="/water-features/">Water Features</a></li>
+      </ul>
+    </li>
+    <li><a href="/gallery/">Gallery</a></li>
+    <li><a href="/#about">About</a></li>
+    <li><a href="/#service-area">Service Area</a></li>
+    <li><a href="/#contact">Contact</a></li>
   </ul>
-  <a class="nav-cta" href="#contact">Free Quote</a>
-  <button class="hamburger" id="hamburger" aria-label="Menu" onclick="toggleMobile()">
-    <span></span><span></span><span></span>
-  </button>
+  <div class="nav-actions">
+    <a class="nav-cta" href="/#contact">Free Quote</a>
+    <button class="theme-toggle" type="button" aria-label="Switch between light and dark theme" title="Switch theme"><svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11z"/></svg></button>
+    <button class="hamburger" id="hamburger" type="button" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
 </nav>
 
 <div class="mobile-menu" id="mobileMenu">
-  <a href="#" onclick="showHome(); closeMobile(); return false;">Services</a>
-  <a href="#biodesign" onclick="closeMobile()">Bio Design</a>
-  <a href="#about" onclick="closeMobile()">About</a>
-  <a href="#service-area" onclick="closeMobile()">Service Area</a>
-  <a href="#contact" onclick="closeMobile()">Contact</a>
-  <a class="m-cta" href="#contact" onclick="closeMobile()">Get a Free Quote</a>
+  <a href="/">Home</a>
+  <a class="m-sub" href="/stamped-concrete-patios/">Stamped Concrete Patios</a>
+  <a class="m-sub" href="/concrete-driveways/">Concrete Driveways</a>
+  <a class="m-sub" href="/retaining-walls/">Hand-Carved Retaining Walls</a>
+  <a class="m-sub" href="/outdoor-kitchens/">Outdoor Kitchens</a>
+  <a class="m-sub" href="/fire-pits/">Fire Pits &amp; Outdoor Fireplaces</a>
+  <a class="m-sub" href="/water-features/">Water Features</a>
+  <a href="/gallery/">Gallery</a>
+  <a href="/#about">About</a>
+  <a href="/#service-area">Service Area</a>
+  <a href="/#contact">Contact</a>
+  <a class="m-cta" href="/#contact">Get a Free Quote</a>
 </div>
 
-<div id="homePage">
-
+<main>
   <section class="hero" id="top">
     <div class="hero-bg"></div>
     <div class="hero-overlay"></div>
     <div class="hero-content">
       <h1 class="hero-eyebrow">Concrete Contractor in Brighton, IL &amp; Greater St. Louis</h1>
       <p class="hero-title">Built to <em>Last.</em><br>Crafted to<br><em>Impress.</em></p>
-      <p class="hero-sub">Custom concrete work unlike anything else — from stamped patios and driveways to hand-carved retaining walls, water features, and outdoor living spaces built with pride.</p>
+      <p class="hero-sub">Custom concrete work unlike anything else. Stamped patios and driveways, hand-carved retaining walls, water features and outdoor living spaces, all built with pride.</p>
       <div class="hero-btns">
         <a class="btn-primary" href="#contact">Request a Free Quote</a>
-        <a class="btn-ghost" href="#" onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'}); return false;">View Our Work</a>
+        <a class="btn-ghost" href="/gallery/">View Our Work</a>
       </div>
     </div>
   </section>
@@ -305,46 +221,65 @@ footer { background: #111009; padding: 3rem 5% 1.5rem; }
       <div class="services-header reveal">
         <p class="section-label">What We Build</p>
         <h2 class="section-title">Our Services</h2>
-        <p class="section-body">Every project is custom — no cookie-cutter work. Click any service to see real examples from completed jobs.</p>
+        <p class="section-body">Every project is custom. No cookie-cutter work. Pick a service to see how we build it and photos from finished jobs.</p>
       </div>
       <div class="services-grid">
-        <a class="service-card reveal" href="#" onclick="showGallery('patios'); return false;">
-          <img src="images/retaining-driveway.jpg" alt="Stamped concrete patio" loading="lazy">
+        <a class="service-card reveal" href="/stamped-concrete-patios/">
+          <img src="/images/patio-20.jpg" alt="Stamped concrete pool deck around a freeform inground pool" loading="lazy" decoding="async">
           <div class="service-card-overlay"></div>
           <div class="service-card-body">
-            <h3 class="service-card-title">Patios &amp; Driveways</h3>
-            <p class="service-card-desc">Stamped, textured, and colored concrete for patios, driveways, walkways, and pool surrounds — distinctive and built to last.</p>
-            <span class="service-card-link">View Examples</span>
+            <h3 class="service-card-title">Stamped Concrete Patios</h3>
+            <p class="service-card-desc">Stamped, colored and textured patios, pool decks and walkways.</p>
+            <span class="service-card-link">Learn More</span>
           </div>
         </a>
-        <a class="service-card reveal" href="#" onclick="showGallery('walls'); return false;">
-          <img src="images/retaining-6.jpg" alt="Hand-carved retaining wall" loading="lazy">
+        <a class="service-card reveal" href="/concrete-driveways/">
+          <img src="/images/driveway-15.jpg" alt="Decorative concrete driveway with colored bands beside a carved stone wall" loading="lazy" decoding="async">
+          <div class="service-card-overlay"></div>
+          <div class="service-card-body">
+            <h3 class="service-card-title">Concrete Driveways</h3>
+            <p class="service-card-desc">New and replacement driveways, parking pads and decorative borders.</p>
+            <span class="service-card-link">Learn More</span>
+          </div>
+        </a>
+        <a class="service-card reveal" href="/retaining-walls/">
+          <img src="/images/retaining-9.jpg" alt="Carved boulder retaining wall along a stamped concrete patio" loading="lazy" decoding="async">
           <div class="service-card-overlay"></div>
           <div class="service-card-body">
             <h3 class="service-card-title">Hand-Carved Retaining Walls</h3>
-            <p class="service-card-desc">Structural retaining walls hand-formed and carved to look like natural stone — built to hold and crafted to impress.</p>
-            <span class="service-card-link">View Examples</span>
+            <p class="service-card-desc">Structural walls hand-carved to look like natural stone.</p>
+            <span class="service-card-link">Learn More</span>
           </div>
         </a>
-        <a class="service-card reveal" href="#" onclick="showGallery('firepits'); return false;">
-          <img src="images/firepit-2.jpg" alt="Custom fire pit and outdoor kitchen" loading="lazy">
+        <a class="service-card reveal" href="/outdoor-kitchens/">
+          <img src="/images/kitchen-3.jpg" alt="Outdoor kitchen island with stone veneer and a concrete countertop" loading="lazy" decoding="async">
           <div class="service-card-overlay"></div>
           <div class="service-card-body">
-            <h3 class="service-card-title">Outdoor Kitchens &amp; Fire Pits</h3>
-            <p class="service-card-desc">Custom-built fire pits, seating walls, and outdoor kitchen features designed for year-round enjoyment.</p>
-            <span class="service-card-link">View Examples</span>
+            <h3 class="service-card-title">Outdoor Kitchens</h3>
+            <p class="service-card-desc">Grill islands and full kitchens with concrete countertops.</p>
+            <span class="service-card-link">Learn More</span>
           </div>
         </a>
-        <a class="service-card reveal" href="#" onclick="showGallery('water'); return false;">
-          <img src="images/water.jpg" alt="Custom water feature" loading="lazy">
+        <a class="service-card reveal" href="/fire-pits/">
+          <img src="/images/firepit-6.jpg" alt="Carved boulder seating wall around a sunken fire pit" loading="lazy" decoding="async">
+          <div class="service-card-overlay"></div>
+          <div class="service-card-body">
+            <h3 class="service-card-title">Fire Pits &amp; Outdoor Fireplaces</h3>
+            <p class="service-card-desc">Carved stone fire pits, seating walls and outdoor fireplaces.</p>
+            <span class="service-card-link">Learn More</span>
+          </div>
+        </a>
+        <a class="service-card reveal" href="/water-features/">
+          <img src="/images/water-4.jpg" alt="Tall carved rock waterfall feature" loading="lazy" decoding="async">
           <div class="service-card-overlay"></div>
           <div class="service-card-body">
             <h3 class="service-card-title">Water Features</h3>
-            <p class="service-card-desc">Custom ponds, waterfalls, and fountains built from hand-carved concrete — transforming any yard into a living landscape.</p>
-            <span class="service-card-link">View Examples</span>
+            <p class="service-card-desc">Carved rock waterfalls, ponds and fountains.</p>
+            <span class="service-card-link">Learn More</span>
           </div>
         </a>
       </div>
+      <div class="services-more reveal"><a class="btn-ghost" href="/gallery/">Browse the Full Gallery</a></div>
     </div>
   </section>
 
@@ -354,21 +289,21 @@ footer { background: #111009; padding: 3rem 5% 1.5rem; }
         <div>
           <p class="section-label">Signature Series</p>
           <h2 class="section-title">Bio Design Pools</h2>
-          <p class="section-body" style="max-width:600px;">A natural-looking pool system that blends seamlessly into the landscape — organic shapes, sandy beach entries, and carved concrete surrounds that look like they were always there. Gallery coming soon.</p>
+          <p class="section-body" style="max-width:600px;">A natural-looking pool system that blends into the landscape. Organic shapes, sandy beach entries, and carved concrete surrounds that look like they were always there. Gallery coming soon.</p>
         </div>
         <span class="biodesign-badge">Coming Soon</span>
       </div>
       <div class="biodesign-grid">
         <div class="bio-card reveal">
-          <img src="images/bio-1.jpg" alt="Bio Design natural pool" loading="lazy">
+          <img src="/images/bio-1.jpg" alt="Bio Design natural pool" loading="lazy" decoding="async">
           <div class="bio-card-overlay"><span class="bio-inner-badge">Coming Soon</span><p class="bio-card-label">Natural Pool Systems</p></div>
         </div>
         <div class="bio-card reveal">
-          <img src="images/bio-2.jpg" alt="Bio Design beach entry pool" loading="lazy">
+          <img src="/images/bio-2.jpg" alt="Bio Design beach entry pool" loading="lazy" decoding="async">
           <div class="bio-card-overlay"><span class="bio-inner-badge">Coming Soon</span><p class="bio-card-label">Beach Entry Designs</p></div>
         </div>
         <div class="bio-card reveal">
-          <img src="images/bio-3.jpg" alt="Bio Design organic surround" loading="lazy">
+          <img src="/images/bio-3.jpg" alt="Bio Design organic surround" loading="lazy" decoding="async">
           <div class="bio-card-overlay"><span class="bio-inner-badge">Coming Soon</span><p class="bio-card-label">Organic Surrounds</p></div>
         </div>
       </div>
@@ -378,19 +313,18 @@ footer { background: #111009; padding: 3rem 5% 1.5rem; }
   <section id="about">
     <div class="about-inner">
       <div class="about-img-wrap reveal">
-        <img src="images/about.jpg" alt="Twin Rivers Concrete — hand-carved work" loading="lazy">
-        <div class="about-accent"></div>
+        <img src="/images/about.jpg" alt="Hand-carved concrete work by Twin Rivers Concrete" loading="lazy" decoding="async">
         <div class="about-stat-badge"><strong>100%</strong>Custom<br>Craftsmanship</div>
       </div>
       <div>
         <p class="section-label reveal">Our Story</p>
         <h2 class="section-title reveal">Built with<br>Craftsmanship<br>&amp; Pride.</h2>
-        <p class="section-body reveal">Twin Rivers Concrete is a locally owned company based in Brighton, Illinois, specializing in custom concrete work and outdoor living features. We focus on craftsmanship, durability, and clean execution from start to finish.<br><br>Owner Caleb Milford is hands-on at every project — when you hire Twin Rivers, you get Caleb's personal attention, not a crew you've never met.</p>
+        <p class="section-body reveal">Twin Rivers Concrete is a locally owned company based in Brighton, Illinois, specializing in custom concrete work and outdoor living features. We focus on craftsmanship, durability, and clean execution from start to finish.<br><br>Owner Caleb Milford is hands-on at every project. When you hire Twin Rivers, you get Caleb's personal attention, not a crew you've never met.</p>
         <div class="pillars reveal">
           <div class="pillar"><p class="pillar-title">Locally Owned</p><p class="pillar-text">Brighton-based, community-rooted, proud of every pour.</p></div>
           <div class="pillar"><p class="pillar-title">Non Cookie Cutter</p><p class="pillar-text">No templates. Every job is designed from scratch.</p></div>
-          <div class="pillar"><p class="pillar-title">Built to Last</p><p class="pillar-text">We don't cut corners. Engineered for the long haul.</p></div>
-          <div class="pillar"><p class="pillar-title">Owner on Site</p><p class="pillar-text">Caleb is hands-on at every project — his name is on it.</p></div>
+          <div class="pillar"><p class="pillar-title">Built to Last</p><p class="pillar-text">We don't cut corners. Built for the long haul.</p></div>
+          <div class="pillar"><p class="pillar-title">Owner on Site</p><p class="pillar-text">Caleb is hands-on at every project. His name is on it.</p></div>
         </div>
       </div>
     </div>
@@ -401,21 +335,16 @@ footer { background: #111009; padding: 3rem 5% 1.5rem; }
       <div class="reveal">
         <p class="section-label">Where We Work</p>
         <h2 class="section-title">Service Area</h2>
-        <p class="section-body">Based in Brighton, IL — Twin Rivers Concrete proudly serves the Greater St. Louis area and surrounding communities.</p>
+        <p class="section-body">Based in Brighton, IL, Twin Rivers Concrete serves the Greater St. Louis area and surrounding communities.</p>
       </div>
       <div class="area-layout reveal">
         <div>
-          <p style="font-family:'Oswald',sans-serif;font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--river);margin-bottom:0.75rem;">Communities We Serve</p>
-          <div class="area-tags">
-            <span class="area-tag">Brighton</span><span class="area-tag">Alton</span><span class="area-tag">Godfrey</span>
-            <span class="area-tag">Edwardsville</span><span class="area-tag">Saint Louis</span><span class="area-tag">Wood River</span>
-            <span class="area-tag">Bethalto</span><span class="area-tag">Roxana</span><span class="area-tag">East Alton</span>
-            <span class="area-tag">Jerseyville</span><span class="area-tag">Collinsville</span><span class="area-tag">Granite City</span>
-          </div>
-          <p style="font-size:0.78rem;color:var(--text-muted);margin-top:1.25rem;font-style:italic;">Plus surrounding communities — not sure if we cover your area? Just call.</p>
+          <p class="area-kicker">Communities We Serve</p>
+          <div class="area-tags"><span class="area-tag">Brighton</span><span class="area-tag">Alton</span><span class="area-tag">Godfrey</span><span class="area-tag">Edwardsville</span><span class="area-tag">Saint Louis</span><span class="area-tag">Wood River</span><span class="area-tag">Bethalto</span><span class="area-tag">Roxana</span><span class="area-tag">East Alton</span><span class="area-tag">Jerseyville</span><span class="area-tag">Collinsville</span><span class="area-tag">Granite City</span></div>
+          <p class="area-note">Plus surrounding communities. Not sure if we cover your area? Just call.</p>
         </div>
         <div class="map-wrap">
-          <iframe title="Twin Rivers Concrete Service Area — Brighton IL and Greater St. Louis"
+          <iframe title="Twin Rivers Concrete service area, Brighton IL and Greater St. Louis"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d196000!2d-90.15!3d38.92!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87d8b5f5fd69c3db%3A0x19921c21a0a88a8!2sBrighton%2C%20IL%2062012!5e0!3m2!1sen!2sus!4v1700000000000"
             allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
@@ -431,7 +360,7 @@ footer { background: #111009; padding: 3rem 5% 1.5rem; }
         <p class="section-body reveal">Reach out for a free quote. We'll come take a look, talk through your vision, and give you a straight answer on what it takes to build it right.</p>
         <div class="contact-detail reveal">
           <div class="c-icon">&#9742;</div>
-          <div><p class="c-key">Phone / Text</p><p class="c-val"><a href="tel:6189548268">(618) 954-8268</a></p></div>
+          <div><p class="c-key">Call or Text</p><p class="c-val"><a href="tel:6189548268">(618) 954-8268</a> &middot; <a href="sms:+16189548268">Send a text</a></p></div>
         </div>
         <div class="contact-detail reveal">
           <div class="c-icon">&#9993;</div>
@@ -444,14 +373,14 @@ footer { background: #111009; padding: 3rem 5% 1.5rem; }
       </div>
       <div class="contact-form reveal">
         <p class="form-title">Request a Free Quote</p>
-        <div style="position:absolute;left:-9999px;opacity:0;pointer-events:none;height:0;overflow:hidden;" aria-hidden="true">
+        <div class="hp-field" aria-hidden="true">
           <input type="text" id="hp_website" name="website" tabindex="-1" autocomplete="off">
         </div>
-        <div class="form-row" style="margin-bottom:0">
+        <div class="form-row">
           <div class="form-group"><label for="fname">First Name *</label><input type="text" id="fname" placeholder="John" autocomplete="given-name"></div>
           <div class="form-group"><label for="lname">Last Name *</label><input type="text" id="lname" placeholder="Smith" autocomplete="family-name"></div>
         </div>
-        <div class="form-row" style="margin-bottom:0">
+        <div class="form-row">
           <div class="form-group"><label for="phone">Phone *</label><input type="tel" id="phone" placeholder="(618) 555-0100" autocomplete="tel"></div>
           <div class="form-group"><label for="email">Email</label><input type="email" id="email" placeholder="you@email.com" autocomplete="email"></div>
         </div>
@@ -459,389 +388,71 @@ footer { background: #111009; padding: 3rem 5% 1.5rem; }
           <label for="service">Service Interested In</label>
           <select id="service">
             <option value="">Select a service...</option>
-            <option>Patios &amp; Driveways</option>
+            <option>Stamped Concrete Patio or Pool Deck</option>
+            <option>Concrete Driveway</option>
             <option>Hand-Carved Retaining Wall</option>
-            <option>Outdoor Kitchen or Fire Pit</option>
-            <option>Water Feature / Fountain</option>
+            <option>Outdoor Kitchen</option>
+            <option>Fire Pit or Fireplace</option>
+            <option>Water Feature or Fountain</option>
             <option>Bio Design Pool</option>
             <option>Other / Not Sure Yet</option>
           </select>
         </div>
         <div class="form-group"><label for="message">Tell us about your project</label><textarea id="message" placeholder="Describe your project, approximate size, timeline, or any questions..."></textarea></div>
         <div class="captcha-row">
-          <span class="captcha-q">Quick check &mdash; what is <strong id="cA">?</strong> + <strong id="cB">?</strong>?</span>
-          <div class="form-group" style="margin-bottom:0;"><input type="number" id="captchaAns" style="width:80px;" placeholder="?" min="0" max="20"></div>
+          <span class="captcha-q">Quick check: what is <strong id="cA">?</strong> + <strong id="cB">?</strong>?</span>
+          <div class="form-group" style="margin-bottom:0;"><input type="number" id="captchaAns" style="width:80px;" placeholder="?" min="0" max="20" aria-label="Answer"></div>
         </div>
-        <button class="submit-btn" onclick="submitForm()">Send My Request &#8594;</button>
+        <button class="submit-btn" type="button">Send My Request &#8594;</button>
         <p class="rate-note">We typically respond within one business day.</p>
-        <div class="form-msg" id="formMsg"></div>
+        <div class="form-msg" id="formMsg" role="status"></div>
       </div>
     </div>
   </section>
+</main>
 
-  <footer>
-    <div class="footer-inner">
-      <div class="footer-logo"><img src="images/logo.jpg" alt="Twin Rivers Concrete"></div>
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-logo"><img src="/images/logo.jpg" alt="Twin Rivers Concrete" width="120" height="60" loading="lazy"></div>
+      <p class="footer-tag">Custom concrete and outdoor living, built in Brighton, IL for Greater St. Louis.</p>
+    </div>
+    <div>
+      <p class="footer-head">Services</p>
       <ul class="footer-links">
-        <li><a href="#" onclick="showHome(); return false;">Services</a></li>
-        <li><a href="#biodesign">Bio Design</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#service-area">Service Area</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="/stamped-concrete-patios/">Stamped Concrete Patios</a></li>
+        <li><a href="/concrete-driveways/">Concrete Driveways</a></li>
+        <li><a href="/retaining-walls/">Hand-Carved Retaining Walls</a></li>
+        <li><a href="/outdoor-kitchens/">Outdoor Kitchens</a></li>
+        <li><a href="/fire-pits/">Fire Pits &amp; Outdoor Fireplaces</a></li>
+        <li><a href="/water-features/">Water Features</a></li>
       </ul>
     </div>
-    <div class="footer-bottom">
-      <p class="footer-copy">&copy; <span id="year">2026</span> Twin Rivers Concrete &mdash; Brighton, IL. All rights reserved.</p>
-      <p class="footer-copy">Site by <a href="https://chanceitstudio.com" style="color:var(--river);text-decoration:none;">Chance IT Studio</a></p>
+    <div>
+      <p class="footer-head">Company</p>
+      <ul class="footer-links">
+        <li><a href="/gallery/">Project Gallery</a></li>
+        <li><a href="/#biodesign">Bio Design Pools</a></li>
+        <li><a href="/#about">About Caleb</a></li>
+        <li><a href="/#service-area">Service Area</a></li>
+      </ul>
     </div>
-  </footer>
-
-</div><!-- end #homePage -->
-
-
-<!-- ═══════════ GALLERY PAGES ═══════════ -->
-
-<!-- ─ Patios & Driveways ─
-     TO ADD A PHOTO: drop the jpg in images/ then copy one gallery-thumb div and update src + alt -->
-<div class="gallery-page" id="galleryPatios">
-  <div class="gallery-page-inner">
-    <button class="gallery-back" onclick="showHome()">Back to Services</button>
-    <p class="section-label">Service Gallery</p>
-    <h2 class="section-title">Patios &amp; Driveways</h2>
-    <p class="section-body">Stamped, textured, and colored concrete for patios, driveways, walkways, and pool surrounds.</p>
-    <div class="gallery-grid" id="gridPatios">
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/driveway-13.jpg" alt="Concrete driveway design" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/driveway-14.jpg" alt="Concrete driveway design" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/patio.jpg" alt="Custom stamped concrete patio" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/patio-1.jpg" alt="Stamped concrete patio" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/patio-2.jpg" alt="Custom patio design" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/patio-3.jpg" alt="Stamped patio detail" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/patio-4.jpg" alt="Concrete patio with texture" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/patio-5.jpg" alt="Outdoor patio space" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/patio-6.jpg" alt="Custom concrete patio" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/patio-7.jpg" alt="Stamped concrete patio" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/patio-8.jpg" alt="Patio with decorative concrete" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/patio-9.jpg" alt="Custom outdoor patio" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/patio-10.jpg" alt="Stamped concrete patio design" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/patio-11.jpg" alt="Concrete patio project" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/patio-12.jpg" alt="Custom stamped patio" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/patio-13.jpg" alt="Outdoor concrete patio" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/patio-14.jpg" alt="Stamped concrete patio" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/patio-15.jpg" alt="Custom patio design" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/patio-16.jpg" alt="Decorative concrete patio" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/patio-17.jpg" alt="Outdoor patio area" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/patio-18.jpg" alt="Stamped concrete patio" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/patio-19.jpg" alt="Custom concrete patio" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/driveway-1.jpg" alt="Custom concrete driveway" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/driveway-2.jpg" alt="Stamped concrete driveway" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/driveway-3.jpg" alt="Decorative driveway" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/driveway-4.jpg" alt="Concrete driveway design" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/driveway-5.jpg" alt="Custom driveway concrete" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/driveway-6.jpg" alt="Stamped driveway" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/driveway-7.jpg" alt="Concrete driveway" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/driveway-8.jpg" alt="Custom concrete driveway" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/driveway-9.jpg" alt="Driveway concrete work" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/driveway-10.jpg" alt="Decorative concrete driveway" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/driveway-11.jpg" alt="Custom driveway design" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/driveway-12.jpg" alt="Stamped concrete driveway" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/patio-firepit.jpg" alt="Patio with fire pit" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/firepit-patio-1.jpg" alt="Fire pit and patio area" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining-patio.jpg" alt="Retaining wall with patio" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining-patio-1.jpg" alt="Retaining wall and patio design" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining-patio-2.jpg" alt="Retaining wall patio project" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining-patio-3.jpg" alt="Custom retaining wall and patio" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining-patio-firepit.jpg" alt="Retaining wall, patio, and fire pit" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining-driveway.jpg" alt="Retaining wall with driveway" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining-driveway-water.jpg" alt="Retaining wall, driveway, and water feature" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining-driveway-water-1.jpg" alt="Retaining wall, driveway, and water feature" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/water-firepit-patio.jpg" alt="Water feature, fire pit, and patio" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/water-firepit-patio-1.jpg" alt="Water feature, fire pit, and patio" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/water-firepit-patio-2.jpg" alt="Water feature, fire pit, and patio" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/water-firepit-patio-3.jpg" alt="Water feature, fire pit, and patio" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/water-firepit-patio-4.jpg" alt="Water feature, fire pit, and patio" loading="lazy"></div>
-          <div class="gallery-thumb" onclick="openLb(this)"><img src="images/patio-21.jpg" alt="Outdoor patio area" loading="lazy"></div>
-          <div class="gallery-thumb" onclick="openLb(this)"><img src="images/patio-20.jpg" alt="Outdoor patio area" loading="lazy"></div>
-      <!-- ADD NEW PATIOS/DRIVEWAYS PHOTOS HERE -->
+    <div>
+      <p class="footer-head">Contact</p>
+      <ul class="footer-links">
+        <li><a href="tel:6189548268">Call (618) 954-8268</a></li>
+        <li><a href="sms:+16189548268">Text (618) 954-8268</a></li>
+        <li><a href="mailto:twinriversconcrete@outlook.com">twinriversconcrete@outlook.com</a></li>
+        <li><a href="/#contact">Request a Free Quote</a></li>
+      </ul>
     </div>
   </div>
-</div>
-
-<!-- ─ Hand-Carved Retaining Walls ─
-     TO ADD A PHOTO: drop the jpg in images/ then copy one gallery-thumb div and update src + alt -->
-<div class="gallery-page" id="galleryWalls">
-  <div class="gallery-page-inner">
-    <button class="gallery-back" onclick="showHome()">Back to Services</button>
-    <p class="section-label">Service Gallery</p>
-    <h2 class="section-title">Hand-Carved Retaining Walls</h2>
-    <p class="section-body">Structural walls hand-formed and carved to look like natural stone — built to hold and crafted to impress.</p>
-    <div class="gallery-grid" id="gridWalls">
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining.jpg" alt="Hand-carved retaining wall" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining-1.jpg" alt="Custom retaining wall" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining-1.jpeg" alt="Carved concrete retaining wall" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining-2.jpg" alt="Hand-carved retaining wall" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining-3.jpg" alt="Custom concrete retaining wall" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining-4.jpg" alt="Natural stone look retaining wall" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining-01.jpg" alt="Retaining wall project" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining-02.jpg" alt="Hand-formed retaining wall" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining-22.jpg" alt="Carved retaining wall" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining-24.jpg" alt="Custom retaining wall design" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining-27.jpg" alt="Hand-carved concrete wall" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining-29.jpg" alt="Retaining wall with texture" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining-30.jpg" alt="Custom concrete retaining wall" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining-34.jpg" alt="Hand-carved retaining wall" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining-patio.jpg" alt="Retaining wall with patio" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining-patio-1.jpg" alt="Retaining wall and patio design" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining-patio-2.jpg" alt="Retaining wall patio project" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining-patio-3.jpg" alt="Custom retaining wall and patio" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining-patio-firepit.jpg" alt="Retaining wall, patio, and fire pit" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining-driveway.jpg" alt="Retaining wall with driveway" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining-driveway-water.jpg" alt="Retaining wall, driveway, and water feature" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining-driveway-water-1.jpg" alt="Retaining wall, driveway, and water feature" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining-water.jpg" alt="Retaining wall with water feature" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining-water-firepit.jpg" alt="Retaining wall, water feature, and fire pit" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/water-retaining.jpg" alt="Water feature and retaining wall" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining-5.jpg" alt="Natural stone look retaining wall" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining-6.jpg" alt="Natural stone look retaining wall" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining-7.jpg" alt="Natural stone look retaining wall" loading="lazy"></div>
-      <!-- ADD NEW RETAINING WALL PHOTOS HERE -->
-    </div>
+  <div class="footer-bottom">
+    <p class="footer-copy">&copy; <span id="year">2026</span> Twin Rivers Concrete, Brighton, IL. All rights reserved.</p>
+    <p class="footer-copy">Site by <a href="https://chanceitstudio.com">Chance IT Studio</a></p>
   </div>
-</div>
+</footer>
 
-<!-- ─ Outdoor Kitchens & Fire Pits ─
-     TO ADD A PHOTO: drop the jpg in images/ then copy one gallery-thumb div and update src + alt -->
-<div class="gallery-page" id="galleryFirepits">
-  <div class="gallery-page-inner">
-    <button class="gallery-back" onclick="showHome()">Back to Services</button>
-    <p class="section-label">Service Gallery</p>
-    <h2 class="section-title">Outdoor Kitchens &amp; Fire Pits</h2>
-    <p class="section-body">Custom fire pits, seating walls, and outdoor kitchen features built for year-round enjoyment.</p>
-    <div class="gallery-grid" id="gridFirepits">
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/kitchen-1.png" alt="Custom outdoor kitchen" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/kitchen-3.jpg" alt="Outdoor kitchen build" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/kitchen-4.jpg" alt="Custom concrete outdoor kitchen" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/kitchen-5.jpg" alt="Outdoor kitchen and grill area" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/kitchen-8.png" alt="Outdoor kitchen design" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/kitchen-10.jpg" alt="Custom outdoor kitchen" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/firepit.jpg" alt="Custom concrete fire pit" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/firepit-1.jpg" alt="Fire pit with seating area" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/patio-firepit.jpg" alt="Patio with fire pit" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/firepit-patio.jpg" alt="Patio with fire pit" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/firepit-patio-1.jpg" alt="Fire pit and patio area" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining-patio-firepit.jpg" alt="Retaining wall, patio, and fire pit" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining-water-firepit.jpg" alt="Retaining wall, water feature, and fire pit" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/water-firepit-patio.jpg" alt="Water feature, fire pit, and patio" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/water-firepit-patio-1.jpg" alt="Water feature, fire pit, and patio" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/water-firepit-patio-2.jpg" alt="Water feature, fire pit, and patio" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/water-firepit-patio-3.jpg" alt="Water feature, fire pit, and patio" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/water-firepit-patio-4.jpg" alt="Water feature, fire pit, and patio" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/firepit-2.jpg" alt="Custom concrete fire pit" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/firepit-3.jpg" alt="Custom concrete fire pit" loading="lazy"></div>
-      <!-- ADD NEW KITCHEN/FIREPIT PHOTOS HERE -->
-    </div>
-  </div>
-</div>
-
-<!-- ─ Water Features ─
-     TO ADD A PHOTO: drop the jpg in images/ then copy one gallery-thumb div and update src + alt -->
-<div class="gallery-page" id="galleryWater">
-  <div class="gallery-page-inner">
-    <button class="gallery-back" onclick="showHome()">Back to Services</button>
-    <p class="section-label">Service Gallery</p>
-    <h2 class="section-title">Water Features</h2>
-    <p class="section-body">Custom ponds, waterfalls, and fountains hand-carved from concrete.</p>
-    <div class="gallery-grid" id="gridWater">
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/water.jpg" alt="Custom water feature" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/water-1.jpg" alt="Concrete waterfall and pond" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/water-2.jpg" alt="Custom water feature design" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/water-3.jpg" alt="Waterfall feature" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/water-4.jpg" alt="Pond and water feature" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining-water.jpg" alt="Retaining wall with water feature" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/water-retaining.jpg" alt="Water feature and retaining wall" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining-driveway-water.jpg" alt="Retaining wall, driveway, and water feature" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining-driveway-water-1.jpg" alt="Retaining wall, driveway, and water feature" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/retaining-water-firepit.jpg" alt="Retaining wall, water feature, and fire pit" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/water-firepit-patio.jpg" alt="Water feature, fire pit, and patio" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/water-firepit-patio-1.jpg" alt="Water feature, fire pit, and patio" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/water-firepit-patio-2.jpg" alt="Water feature, fire pit, and patio" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/water-firepit-patio-3.jpg" alt="Water feature, fire pit, and patio" loading="lazy"></div>
-      <div class="gallery-thumb" onclick="openLb(this)"><img src="images/water-firepit-patio-4.jpg" alt="Water feature, fire pit, and patio" loading="lazy"></div>
-      <!-- ADD NEW WATER FEATURE PHOTOS HERE -->
-    </div>
-  </div>
-</div>
-
-<div class="lightbox" id="lightbox">
-  <button class="lb-close" onclick="closeLb()">&#x2715;</button>
-  <img id="lbImg" src="" alt="">
-</div>
-
-<script>
-function toggleMobile() {
-  document.getElementById('hamburger').classList.toggle('open');
-  document.getElementById('mobileMenu').classList.toggle('open');
-}
-function closeMobile() {
-  document.getElementById('hamburger').classList.remove('open');
-  document.getElementById('mobileMenu').classList.remove('open');
-}
-document.addEventListener('click', e => {
-  const mm = document.getElementById('mobileMenu');
-  if (mm.classList.contains('open') && !mm.contains(e.target) && !e.target.closest('#hamburger'))
-    closeMobile();
-});
-window.addEventListener('scroll', () => {
-  document.getElementById('mainNav').style.background =
-    window.scrollY > 50 ? 'rgba(18,17,13,0.99)' : 'rgba(22,21,17,0.96)';
-});
-
-const galleries = ['galleryPatios', 'galleryWalls', 'galleryFirepits', 'galleryWater'];
-
-function showHome(fromPopState) {
-  document.getElementById('homePage').style.display = 'block';
-  galleries.forEach(id => document.getElementById(id).classList.remove('active'));
-  if (!fromPopState) history.pushState({ page: 'home' }, '', '#services');
-  document.getElementById('services').scrollIntoView({ behavior: 'smooth' });
-  setTimeout(initReveal, 80);
-}
-
-function showGallery(cat, fromPopState) {
-  closeMobile();
-  document.getElementById('homePage').style.display = 'none';
-  galleries.forEach(id => document.getElementById(id).classList.remove('active'));
-  const map = { patios: 'galleryPatios', walls: 'galleryWalls', firepits: 'galleryFirepits', water: 'galleryWater' };
-  if (map[cat]) document.getElementById(map[cat]).classList.add('active');
-  if (!fromPopState) history.pushState({ page: 'gallery', cat }, '', '#' + cat);
-  window.scrollTo({ top: 0, behavior: 'instant' });
-}
-
-window.addEventListener('popstate', e => {
-  if (!e.state || e.state.page === 'home') {
-    showHome(true);
-  } else if (e.state.page === 'gallery') {
-    showGallery(e.state.cat, true);
-  }
-});
-
-// Set initial history state
-history.replaceState({ page: 'home' }, '', window.location.href);
-
-function openLb(el) {
-  const img = el.querySelector('img');
-  document.getElementById('lbImg').src = img.src;
-  document.getElementById('lbImg').alt = img.alt;
-  document.getElementById('lightbox').classList.add('open');
-  document.body.style.overflow = 'hidden';
-}
-function closeLb() {
-  document.getElementById('lightbox').classList.remove('open');
-  document.body.style.overflow = '';
-}
-document.getElementById('lightbox').addEventListener('click', e => {
-  if (e.target === e.currentTarget) closeLb();
-});
-document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLb(); });
-
-function initReveal() {
-  const obs = new IntersectionObserver(entries => {
-    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
-  document.querySelectorAll('.reveal').forEach(el => {
-    el.classList.remove('visible');
-    obs.observe(el);
-  });
-}
-initReveal();
-
-document.getElementById('year').textContent = new Date().getFullYear();
-
-let captchaAnswer = 0;
-function newCaptcha() {
-  const a = Math.floor(Math.random() * 9) + 1;
-  const b = Math.floor(Math.random() * 9) + 1;
-  captchaAnswer = a + b;
-  document.getElementById('cA').textContent = a;
-  document.getElementById('cB').textContent = b;
-  document.getElementById('captchaAns').value = '';
-}
-newCaptcha();
-
-let lastSubmit = 0;
-
-const FORM_ENDPOINT = 'https://formspree.io/f/mnjoeqkd';
-
-async function submitForm() {
-  const msgEl = document.getElementById('formMsg');
-  msgEl.className = 'form-msg';
-  if (document.getElementById('hp_website').value !== '') return;
-  if (Date.now() - lastSubmit < 30000) {
-    msgEl.textContent = 'Please wait a moment before submitting again.';
-    msgEl.className = 'form-msg error';
-    return;
-  }
-  const fname = document.getElementById('fname').value.trim();
-  const lname = document.getElementById('lname').value.trim();
-  const phone = document.getElementById('phone').value.trim();
-  if (!fname || !lname) {
-    msgEl.textContent = 'Please enter your first and last name.';
-    msgEl.className = 'form-msg error';
-    return;
-  }
-  if (!phone) {
-    msgEl.textContent = 'Please enter a phone number so we can reach you.';
-    msgEl.className = 'form-msg error';
-    return;
-  }
-  if (phone.replace(/\D/g, '').length < 10) {
-    msgEl.textContent = 'Please enter a valid 10-digit phone number.';
-    msgEl.className = 'form-msg error';
-    return;
-  }
-  const email = document.getElementById('email').value.trim();
-  if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-    msgEl.textContent = "That email address doesn't look quite right.";
-    msgEl.className = 'form-msg error';
-    return;
-  }
-  const ans = parseInt(document.getElementById('captchaAns').value, 10);
-  if (isNaN(ans) || ans !== captchaAnswer) {
-    msgEl.textContent = 'Incorrect answer to the math question — please try again.';
-    msgEl.className = 'form-msg error';
-    newCaptcha();
-    return;
-  }
-  const name = fname + ' ' + lname;
-  const service = document.getElementById('service').value || 'Not provided';
-  const message = document.getElementById('message').value.trim() || 'Not provided';
-  const payload = { name, phone, service, message, _subject: 'New quote request: ' + name };
-  if (email) { payload.email = email; payload._replyto = email; }
-
-  const btn = document.querySelector('.submit-btn');
-  const btnLabel = btn.innerHTML;
-  btn.disabled = true;
-  btn.textContent = 'Sending...';
-  try {
-    const res = await fetch(FORM_ENDPOINT, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-      body: JSON.stringify(payload)
-    });
-    if (!res.ok) throw new Error('Formspree ' + res.status);
-    lastSubmit = Date.now();
-    newCaptcha();
-    msgEl.innerHTML = '&#10003;&nbsp; Message received! Caleb will be in touch soon. You can also call or text directly: <a href="tel:6189548268" style="color:var(--river)">(618) 954-8268</a>';
-    msgEl.className = 'form-msg success';
-    ['fname', 'lname', 'phone', 'email', 'message'].forEach(id => document.getElementById(id).value = '');
-    document.getElementById('service').selectedIndex = 0;
-  } catch (err) {
-    newCaptcha();
-    msgEl.innerHTML = 'Something went wrong sending your request. Please try again, or call or text Caleb at <a href="tel:6189548268" style="color:var(--river)">(618) 954-8268</a>.';
-    msgEl.className = 'form-msg error';
-  } finally {
-    btn.disabled = false;
-    btn.innerHTML = btnLabel;
-  }
-}
-</script>
+<script src="/js/main.js" defer></script>
 </body>
 </html>
